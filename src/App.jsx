@@ -6,6 +6,7 @@ import About from './components/About/About';
 import Contact from './components/Contact/Contact'
 import Nav from './components/NavBar/Nav';
 import Footer from './components/Footer/Footer'
+import ArticleDetail from './components/ArticleDetail/ArticleDetail'
 
 
 
@@ -21,6 +22,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/contact" element={<Contact />} />
+          <Route exact path="/detail/:id" element={<ArticleDetail />} />
         </Routes>
        <Footer/>
       </BrowserRouter>

@@ -1,5 +1,6 @@
 .main {
     background-color: green;
+    border: solid black 1px;
 }
 
 @media screen and (max-width: 500px){

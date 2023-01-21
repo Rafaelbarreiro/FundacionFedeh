@@ -17,6 +17,7 @@ return (
         key={el.id}
         img={el.img}
         title={el.title}
+        id={el.id}
     />
     ) )}
 </div>
