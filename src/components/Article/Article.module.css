@@ -1,0 +1,9 @@
+.main {
+    background-color: green;
+}
+
+@media screen and (max-width: 500px){
+.title{
+    text-align: center;
+}
+}

@@ -1,0 +1,21 @@
+
+
+@media screen and (max-width: 500px){
+
+.logo{
+    position: absolute;
+    top: 10px;
+    margin-left: 10px;
+    overflow: hidden;
+    width: 70px;
+}
+.navList{
+    margin-left: 50px;
+    font-size: 20px;
+}
+.loginButton{
+    position: relative;
+    float: top;
+    margin-top: 0px;
+}
+}
