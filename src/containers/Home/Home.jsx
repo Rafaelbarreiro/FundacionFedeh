@@ -19,15 +19,7 @@ export default function Home() {
           <main className={H.main}>
 
            <Articles />
-          <div >
-           <h1>prueba2</h1> 
-          </div>
-          <div >
-           <h1>prueba3</h1> 
-          </div>
-          <div >
-           <h1>prueba4</h1> 
-          </div>
+         
           </main>
         
         </div>
