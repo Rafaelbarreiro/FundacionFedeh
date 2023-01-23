@@ -1,7 +1,12 @@
-
+.container{
+    background-color: red;
+}
 
 @media screen and (max-width: 500px){
 
+.container{
+    height: 150px;
+}
 .logo{
     position: absolute;
     top: 10px;

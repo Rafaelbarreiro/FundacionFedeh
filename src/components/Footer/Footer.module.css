@@ -1,4 +1,26 @@
 .main{
     background-color: red;
-   
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 20px;
+}
+.icon{
+    width: 1px;
+    height: 1px;
+    background-color: red;
+}
+
+
+@media screen and (max-width: 500px){
+.main{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.logo{
+    width: 100px;
+}
+
+
+
 }

@@ -9,7 +9,7 @@ export default function About(){
 
     return(
         <div>
-            <Nav className={s.navBar} />
+            
             <div className={s.contact} >
                 <h3>COMO CONTACTARNOS:</h3>
                 <span>

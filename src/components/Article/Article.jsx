@@ -8,8 +8,8 @@ export default function Article(props){
     return (
         <div className={s.main}>
             <div>
-            <Link to={`/detail/${props.id}`} className="s.link">
-               <h1>{props.title}</h1> 
+            <Link to={`/detail/${props.id}`} className={s.link}>
+               <h2 className={s.link}>{props.title}</h2> 
                <img src={props.img} alt="" />
                </Link>
             </div>

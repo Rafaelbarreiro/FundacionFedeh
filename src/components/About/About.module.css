@@ -17,18 +17,7 @@
     background-color: red;
     width: 70%;
 }
-.main {
-    display: grid;
-    gap: 10px;
-    grid-auto-rows: minmax(150px, auto);
-    grid-template-columns: auto;
-    grid-template: 
-    "navBar" 150px
-    "header" 
-    "img"
-    "about"
-    "contact"
-}
+
 .textHeader {
     width: 80%;
 }

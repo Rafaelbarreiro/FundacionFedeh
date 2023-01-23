@@ -1,5 +1,5 @@
 .main {
-    background-color: green;
+    
     border: solid black 1px;
    
 }
@@ -15,5 +15,10 @@
 @media screen and (max-width: 500px){
 .title{
     text-align: center;
+    font-size: 100px;
+    font-weight: bold;
+}
+.main{
+    margin: 20px;
 }
 }
