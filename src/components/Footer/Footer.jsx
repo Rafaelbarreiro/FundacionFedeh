@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import F from "../Footer/Footer.module.css";
-import telephone from "../../Images/telephone.jpg"
 
 export default function Nav(){
 
@@ -38,7 +37,7 @@ export default function Nav(){
                <li>Contactenos</li>
             </Link>
 
-            <Link to="/join" style={{ textDecoration: "none" }}>
+            <Link to="/sumate" style={{ textDecoration: "none" }}>
                <li>Unite a Fedeh</li>
             </Link>
             <br></br>

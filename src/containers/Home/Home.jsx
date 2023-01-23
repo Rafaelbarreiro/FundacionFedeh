@@ -3,10 +3,9 @@ import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import Carousel from "../../components/Carrousel";
 import H from "../Home/Home.module.css";
-import Nav from "../../components/NavBar/Nav";
-import Footer from "../../components/Footer/Footer"
-import Article from "../../components/Article/Article";
-import Articles from "../Articles/Articles"
+import Join from "../../components/Join/Join";
+import Articles from "../Articles/Articles";
+
 
 export default function Home() {
   
@@ -21,6 +20,9 @@ export default function Home() {
            <Articles />
          
           </main>
+          <div>
+            <Join />
+          </div>
         
         </div>
   );
