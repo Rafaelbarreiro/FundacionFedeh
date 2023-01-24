@@ -13,8 +13,8 @@ export default function Home() {
    
   return (
         <div className={H.gridContainer}>
-           <img src="https://res.cloudinary.com/degd9cgyd/image/upload/v1672282350/slider_one-2_aozutl.jpg"/>
-          
+           
+            <Carousel />
           <main className={H.main}>
 
            <Articles />

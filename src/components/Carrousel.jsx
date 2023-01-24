@@ -9,10 +9,10 @@ function Carousel() {
       <img  src="https://res.cloudinary.com/degd9cgyd/image/upload/v1672282350/slider_one-2_aozutl.jpg" alt="First slide"/>
     </div>
     <div className="carousel-item">
-      <img  src="https://res.cloudinary.com/degd9cgyd/image/upload/v1672282350/slider_one-2_aozutl.jpg" alt="Second slide"/>
+      <img  src="https://res.cloudinary.com/degd9cgyd/image/upload/v1674528606/slider_three_xt2xoe_vt91wc.jpg" alt="Second slide"/>
     </div>
     <div className="carousel-item">
-      <img  src="https://res.cloudinary.com/degd9cgyd/image/upload/v1672282350/slider_one-2_aozutl.jpg" alt="Third slide"/>
+      <img  src="https://res.cloudinary.com/degd9cgyd/image/upload/c_scale,h_381,w_546/v1672020190/gracias_f4vh9s.jpg" alt="Third slide"/>
     </div>
   </div>
   <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
