@@ -13,7 +13,7 @@ export default function Nav(){
   return (
     <>
       <div className={N.container}>
-        <div >
+        <div className={N.logoUp}>
           <Link to="/" >
             <img
               src="https://res.cloudinary.com/dbtekd33p/image/upload/v1671422387/cqws5x8n/enyl4rknrg9ub2vtpmb6.png"
@@ -21,6 +21,10 @@ export default function Nav(){
               className={N.logo}
             />
           </Link>
+
+        </div>
+
+        <div className={N.menu}>
           <ul className={N.navList}>
             <Link to="/" style={{ textDecoration: "none" }}>
               <li>Inicio</li>
@@ -49,7 +53,6 @@ export default function Nav(){
         </div>
 
         <div className={N.loginButton}>
-          <h6 className={N.loginText}>
             {isAuthenticated ? (
               <>
                 <LogoutButton />
@@ -57,12 +60,8 @@ export default function Nav(){
             ) : (
               <LoginButton />
             )}
-          </h6>
-         
         </div>
-        <div className={N.line}>
-          <hr />
-        </div>
+  
       </div>
     </>
   );
