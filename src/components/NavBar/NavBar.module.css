@@ -9,7 +9,7 @@
     height: 150px;
     display: flex;
     flex-direction: row;
-
+    margin-bottom: 15px;
 }
 .menu{
     width: 65%;

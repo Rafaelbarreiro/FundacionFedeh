@@ -2,9 +2,21 @@
     background: url("../../Images/background.jpg") ;
     height: 200px;
 }
+.button{
+    border-radius: 5px;
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    width: 80px;
+    height: 36px;
+}
 
 @media screen and (max-width: 500px){
     .main{
         height: 150px;
+        padding-left: 70%;
+    }
+    .sumate{
+        padding: 15px;
     }
 }

@@ -7,15 +7,16 @@ export default function Join(){
 
 return(
 <div className={s.main}>
-    <div>
-        <Link to="/donar" style={{ textDecoration: "none" }}>
-              <button>Donar</button>
-        </Link>      
+   
+    <div className={s.sumate} >
+        <Link to="/donar">
+    <button type="button" className={s.button} >Donar</button>
+        </Link>
     </div>
-    <div>
-        <Link to="/sumate" style={{ textDecoration: "none" }}>
-              <button>Sumate</button>
-        </Link>      
+    <div className={s.sumate} >
+        <Link to="/sumate">
+    <button type="button" className={s.button}>Sumate</button>
+        </Link>
     </div>
 
 </div>
