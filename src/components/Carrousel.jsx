@@ -1,14 +1,13 @@
-//import HC from "../HomeCarrousel/HomeCarousel.module.css";
 
 function Carousel() {
     return (
       <div>
-      <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
+      <div id="carouselExampleControls" className="carousel slide" style={{ textAlign: "center", paddingTop:"11vh" }} data-ride="carousel">
   <div className="carousel-inner">
-    <div className="carousel-item active">
+    <div className="carousel-item active" style={{ backgroundColor: "#f0e359" }}>
       <img  src="https://res.cloudinary.com/degd9cgyd/image/upload/v1672282350/slider_one-2_aozutl.jpg" alt="First slide"/>
     </div>
-    <div className="carousel-item">
+    <div className="carousel-item" style={{ backgroundColor: "#cc162c" }}>
       <img  src="https://res.cloudinary.com/degd9cgyd/image/upload/v1674528606/slider_three_xt2xoe_vt91wc.jpg" alt="Second slide"/>
     </div>
     <div className="carousel-item">
