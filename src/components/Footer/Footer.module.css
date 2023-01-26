@@ -49,9 +49,9 @@ p{
 }
 .contact{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 .logo{
     width: 80px;
