@@ -2,7 +2,7 @@
 function Carousel() {
     return (
       <div>
-      <div id="carouselExampleControls" className="carousel slide" style={{ textAlign: "center", paddingTop:"11vh" }} data-ride="carousel">
+      <div id="carouselExampleControls" className="carousel slide" style={{ textAlign: "center" }} data-ride="carousel">
   <div className="carousel-inner">
     <div className="carousel-item active" style={{ backgroundColor: "#f0e359" }}>
       <img  src="https://res.cloudinary.com/degd9cgyd/image/upload/v1672282350/slider_one-2_aozutl.jpg" alt="First slide"/>
