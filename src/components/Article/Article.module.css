@@ -5,10 +5,8 @@
 }
 .link{
     text-align: center;
+    color: black;
 }
-:link {color: black; text-decoration: none}
-:visited {color: black;  font-family: arial }
-:hover { color: black; font-family: arial  }
 
 
 
