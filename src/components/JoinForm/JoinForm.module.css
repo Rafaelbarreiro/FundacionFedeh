@@ -1,11 +1,32 @@
-
+.main {
+    margin-top:00px;
+}
 
 @media screen and (max-width: 500px){
     .containerForm{
         display: flex;
-
+        margin-left: 20px;
     }
     .logo{
         width: 100px;
+        margin-left: 35px;
+        margin-top: 80px;
+    }
+    .main {
+        margin-top: 20px;
+    }
+    h2{
+        text-align: center;
+        margin-left: 10px;
+    }
+    h5{
+        margin-top: 15px;
+    }
+    h6{
+        margin-left: 10px;
+    }
+    .submit{
+        margin: 15px;
+        border-radius: 5px;
     }
 }

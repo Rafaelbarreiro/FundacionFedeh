@@ -14,7 +14,7 @@ export default function Home() {
   return (
         <div className={H.gridContainer}>
            
-            <Carousel />
+            <Carousel className={H.carousel} />
           <main className={H.main}>
 
            <Articles />

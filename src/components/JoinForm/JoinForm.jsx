@@ -4,10 +4,10 @@ import s from "../JoinForm/JoinForm.module.css"
 export default function JoinForm() {
 
 return(
-    <div>
+    <div className={s.main} >
         <div>
             <h2> Quiero unirme a Fedeh como voluntario!</h2>
-            <h5> Los campos marcados con * son obligatorios</h5>
+            <h6> Los campos marcados con * son obligatorios</h6>
         </div>
         <div className={s.containerForm} >
             <div>
@@ -35,6 +35,7 @@ return(
                     <div >
             <button
               type="submit"
+              className={s.submit}
             >
               Enviar
             </button>
