@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 import { LoginButton } from "../Login";
-import { LogoutButton } from "../Logout";
+import { LogoutButton } from "../Logout/Logout";
 import N from "../NavBar/NavBar.module.css";
 
 export default function Nav() {
