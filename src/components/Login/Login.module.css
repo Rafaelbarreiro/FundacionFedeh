@@ -5,10 +5,9 @@
   }
   .container img {
     width: 40px;
-    height: 40px;
     border-radius: 50px;
     float: right;
-    margin-left: 0px;
+    margin-left: 15px;
     margin-top: -5px;
   }
   .container h2 {
@@ -20,23 +19,23 @@
     display: flex;
   }
   .logoutAndProfile button {
-    background-color: white;
+    background-color: transparent;
     height: 30px;
-    color: black;
+    color: #2bfab7;
     border: none;
     border-radius: 8px;
     font-size: 16px;
     margin-left: 30px;
   }
   .logoutAndProfile button:hover {
-    color: red;
+    color: #fff;
     transition: 0.15s ease-in-out;
   }
   
   .loginBtn {
     background: transparent;
     height: 30px;
-    color: #fff;
+    color: black;
     font-size: 16px;
     padding-top: 2px;
     font-weight: 500;
@@ -44,11 +43,12 @@
   .containerLog{
     width: 80px;
     height: 40px;
-    background: white;
+    background: red;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size: 400%;
   }
   
   @keyframes animate {
@@ -63,20 +63,20 @@
   .inner {
     width: 76px;
     height: 37px;
-    background: black;
+    background: white;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .loginBtn:hover {
-    color: white;
+    color: red;
     transition: 0.15s ease-in-out;
     cursor: pointer;
     font-weight: 600;
   }
   
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 480px) {
     .container {
       flex-direction: column-reverse;
       height: 150px;
@@ -91,7 +91,7 @@
     }
     .container img {
       height: fit-content;
-      width: 30px;
+      width: 60px;
       float: none;
       margin-left: 0px;
       margin-top: 10px;
@@ -100,7 +100,7 @@
     .loginBtn {
       background-color: transparent;
       height: 30px;
-      color: red;
+      color: black;
       border: none;
       font-size: 16px;
       margin-left: 0px;
@@ -114,7 +114,7 @@
       border: none;
       background-color: transparent;
       height: 30px;
-      color: red;
+      color: black;
       font-size: 14px;
       margin-left: 0px;
     }

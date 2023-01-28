@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
-import { LoginButton } from "../Login";
+import { LoginButton } from "../Login/Login";
 import { LogoutButton } from "../Logout/Logout";
 import N from "../NavBar/NavBar.module.css";
 
