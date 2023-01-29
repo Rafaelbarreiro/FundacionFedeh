@@ -10,7 +10,7 @@ export default function Article(props){
             <div>
             <Link to={`/detail/${props.id}`} className={s.link}>
                <h2 className={s.link}>{props.title}</h2> 
-               <img src={props.img} alt="" />
+               <img src={props.img} alt="" className={s.img}/>
                </Link>
             </div>
            
