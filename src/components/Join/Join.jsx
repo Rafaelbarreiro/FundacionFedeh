@@ -8,7 +8,7 @@ export default function Join(){
 return(
 <div className={s.main}>
    
-    <div className={s.sumate} >
+    <div className={s.donar} >
         <Link to="/donar">
     <button type="button" className={s.button} >Donar</button>
         </Link>

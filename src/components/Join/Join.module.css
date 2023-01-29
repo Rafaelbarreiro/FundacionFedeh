@@ -1,6 +1,8 @@
 .main{
     background: url("../../Images/background.jpg") ;
     height: 200px;
+    display: flex;
+    margin-top: 20px;
 }
 .button{
     border-radius: 5px;
@@ -10,6 +12,17 @@
     width: 80px;
     height: 36px;
 }
+.button:hover{
+    background-color: red;
+}
+.sumate{
+    margin-left: 35%;
+    margin-top: 80px;
+}
+.donar{
+    margin-left: 20%;
+    margin-top: 80px;
+}
 
 @media screen and (max-width: 500px){
     .main{
@@ -17,6 +30,9 @@
         padding-left: 70%;
     }
     .sumate{
+        padding: 15px;
+    }
+    .donar{
         padding: 15px;
     }
 }
