@@ -7,7 +7,8 @@ import {
     GET_USERS
 } from "../actions/actionName"
 
-const URL = "http://localhost:3001";
+//const URL = "http://localhost:3001";
+const URL = "https://fundacionfedehback-production.up.railway.app/"
 
 export async function populateDB() {
     await axios.get(`${URL}/populateDB`);
