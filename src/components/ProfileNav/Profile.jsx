@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 import { useDispatch } from "react-redux";
+import s from "../ProfileNav/ProfileNav.module.css"
 
 
 export const Profile = () => {
@@ -10,9 +11,9 @@ export const Profile = () => {
 
   const dbUser = { username: user.nickname, email: user.email };
 
-  useEffect(() => {
+ /*  useEffect(() => {
     dispatch(postUser(dbUser));
-  }, [user])
+  }, [user]) */
 
   if (isLoading) {
     return <div>Loading...</div>;
@@ -20,7 +21,7 @@ export const Profile = () => {
 
   return (
     isAuthenticated && (
-      <div className={L.container}>
+      <div className={s.container}>
         <h2>{user.name}</h2>
         <img src={user.picture} alt={user.name} />
       </div>

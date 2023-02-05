@@ -5,7 +5,7 @@ function Carousel() {
       <div id="carouselExampleControls" className="carousel slide" style={{ textAlign: "center" }} data-ride="carousel">
   <div className="carousel-inner">
     <div className="carousel-item active" style={{ backgroundColor: "#f0e359" }}>
-      <img  src="https://res.cloudinary.com/degd9cgyd/image/upload/v1672282350/slider_one-2_aozutl.jpg" alt="First slide"/>
+      <img  src="https://res.cloudinary.com/degd9cgyd/image/upload/v1674942398/slider_one-2_nylkup.jpg" alt="First slide"/>
     </div>
     <div className="carousel-item" style={{ backgroundColor: "#cc162c" }}>
       <img  src="https://res.cloudinary.com/degd9cgyd/image/upload/v1674528606/slider_three_xt2xoe_vt91wc.jpg" alt="Second slide"/>
