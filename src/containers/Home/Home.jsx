@@ -5,6 +5,7 @@ import Carousel from "../../components/Carrousel";
 import H from "../Home/Home.module.css";
 import Join from "../../components/Join/Join";
 import Articles from "../Articles/Articles";
+import Newsletter from "../../components/Newsletter/Newsletter";
 
 
 export default function Home() {
@@ -20,6 +21,9 @@ export default function Home() {
            <Articles />
          
           </main>
+          <div>
+            <Newsletter/>
+          </div>
           <div>
             <Join />
           </div>
