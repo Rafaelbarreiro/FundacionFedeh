@@ -4,7 +4,8 @@ import {
     POST_USER,
     LOGOUT_USER,
     GET_USER,
-    GET_USERS
+    GET_USERS,
+    GET_ARTICLES
 } from "../actions/actionName"
 
 const URL = "http://localhost:3001";
@@ -41,3 +42,11 @@ export function getUsers() {
 export const logoutUser = () => dispatch => {
     return dispatch({ type: LOGOUT_USER });
 };
+
+//////////ARTICLES/////////
+export function getArticles() {
+  return async dispatch => {
+    const res = await axios.get(`${URL}/articles/`);
+    return dispatch({ type: GET_ARTICLES, payload: res.data });
+  };
+}

@@ -2,12 +2,14 @@ import {
   POST_USER,
   LOGOUT_USER,
   GET_USER,
-  GET_USERS
+  GET_USERS,
+  GET_ARTICLES
 } from "../actions/actionName"
 
 const initialState = {
   user: {},
   users: [],
+  articles: []
   };
 
 function rootReducer(state = initialState, action) {
@@ -38,7 +40,13 @@ case LOGOUT_USER: {
     user: {},
   };
 }
-
+///////////ARTICLES///////
+case GET_ARTICLES: {
+  return {
+    ...state,
+    articles: action.payload,
+  };
+}
         
     
  default:
