@@ -27,9 +27,11 @@
 @media screen and (max-width: 500px){
     .main{
         height: 150px;
-        padding-left: 70%;
+        width: 100%;
     }
     .sumate{
+        margin-left: 5%;
+        margin-top: 80px;
         padding: 15px;
     }
     .donar{

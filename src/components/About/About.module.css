@@ -1,16 +1,27 @@
 .navBar {
     grid-area: navBar;
   }
+.main{
+    position: relative;
+    top: 15vh;
+    
+}
 .header {
+   
     grid-area: header;
-    width: 90%;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    
 }
 .img {
+    margin-top: 30px;
     grid-area: img;
 }
 .about {
     grid-area: about;
     width: 70%;
+    margin-left: 25px;
 }
 .contact {
     grid-area: contact;
@@ -20,4 +31,31 @@
 
 .textHeader {
     width: 80%;
+}
+p{
+    font-weight: bolder;
+}
+@media screen and (max-width: 500px){
+
+.main{
+    top: 1vh;
+}
+.img{
+    width: 85%;
+    margin-left: 8%;
+}
+.about{
+    width: 85%;
+}
+.contact{
+    width: 100%; 
+}
+.textHeader {
+    width: 100%;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
 }

@@ -3,7 +3,7 @@ import Article from "../../components/Article/Article"
 import jsonArticles from "../../articlesJson/articles.json";
 import a from "./Articles.module.css"
 
-export default function Cards() {
+export default function Articles() {
 
     
 return (
