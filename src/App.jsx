@@ -11,11 +11,14 @@ import JoinForm from './components/JoinForm/JoinForm';
 import Donate from './components/Donate/Donate';
 import DashBoard from './containers/Dashboard/DashBoard';
 import { ProtectedAdmin } from './components/ProtectedAdmin';
+import { populateDB } from "./redux/actions";
 
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  populateDB();
+
+ 
 
   return (
     <div >
