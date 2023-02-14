@@ -1,24 +1,41 @@
-import React from "react";
-import jsonArticles from "../../articlesJson/articles.json";
+import React, { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
 import { useParams} from "react-router-dom";
 import s from "../ArticleDetail/ArticleDetail.module.css"
+import {getArticleDetail} from "../../redux/actions/index"
 
 export default function Detail() {
-    
+    const dispatch = useDispatch()
     const params = useParams();
-    const Article = jsonArticles.filter( el => el.id == params.id)
+    const detailarticle = useSelector(state => state.article)
+
+    useEffect(() =>{
+        dispatch(getArticleDetail(params.id))
+    }, [dispatch])
+   console.log(detailarticle.imgdetail)
+
 
     return (
         <div className={s.main} >
             <div>
-                <h1> {Article[0].title} </h1>
+                <h1> {detailarticle.title} </h1>
             </div>
             <div>
-            <img src={Article[0].img} alt="" 
+                <h3> {detailarticle.subtitle} </h3>
+            </div>
+            <div className={s.containerimg} >
+            <img src={detailarticle.img} alt="" 
             className={s.img} />
             </div>
             <div>
-                <span> {Article[0].detail} </span>
+                <span> {detailarticle.detail} </span>
+            </div>
+            <div className={s.detailImg} >
+                {detailarticle.imgdetail?.map(el =>(
+                    <div className={s.imgContainer}>
+                        <img src={el} />
+                    </div>
+                ))}
             </div>
         </div>
     )
