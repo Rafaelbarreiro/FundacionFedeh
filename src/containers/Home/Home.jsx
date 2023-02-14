@@ -16,11 +16,12 @@ export default function Home() {
         <div className={H.gridContainer}>
            
             <Carousel className={H.carousel} />
-          <main className={H.main}>
+            
+            <div className={H.main}>
 
            <Articles />
-         
-          </main>
+            </div>
+          
           <div>
             <Newsletter/>
           </div>

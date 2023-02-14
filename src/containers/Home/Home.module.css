@@ -1,6 +1,10 @@
 .gridContainer{
     padding-top:11vh;
 }
+.main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 
 @media screen and (max-width: 500px){
 
