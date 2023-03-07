@@ -1,14 +1,18 @@
 import axios from "axios";
 
 import {
-  POST_USER,
-  LOGOUT_USER,
-  GET_USER,
-  GET_USERS,
-} from "../actions/actionName";
+
+    POST_USER,
+    LOGOUT_USER,
+    GET_USER,
+    GET_USERS,
+    GET_ARTICLES,
+    GET_ARTICLE_ID
+} from "../actions/actionName"
 
 const URL = "http://localhost:3001";
-// const URL = "https://fundacionfedehback-production.up.railway.app"
+//const URL = "https://fundacionfedehback-production.up.railway.app"
+
 
 export async function populateDB() {
   await axios.get(`${URL}/populateDB`);
@@ -39,5 +43,22 @@ export function getUsers() {
 }
 
 export const logoutUser = () => dispatch => {
-  return dispatch({ type: LOGOUT_USER });
+
+    return dispatch({ type: LOGOUT_USER });
 };
+
+//////////ARTICLES/////////
+export function getArticles() {
+  return async dispatch => {
+    const res = await axios.get(`${URL}/articles/`);
+    return dispatch({ type: GET_ARTICLES, payload: res.data });
+  };
+};
+export function getArticleDetail(id){
+  return async dispatch => {
+    const article = await axios.get(`${URL}/articles/${id}`);
+    const payload = article.data;
+    return dispatch({type: GET_ARTICLE_ID, payload})
+  }
+}
+

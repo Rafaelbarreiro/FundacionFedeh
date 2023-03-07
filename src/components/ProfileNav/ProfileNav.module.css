@@ -50,6 +50,19 @@
     justify-content: center;
     align-items: center;
   }
+  .Link {
+  text-decoration: none;
+}
+.DashBoardButton button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: white;
+  /* color: #fff; */
+  margin-bottom: 8px;
+}
+
   
   @keyframes animate {
     0% {
