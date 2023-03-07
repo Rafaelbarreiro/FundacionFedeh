@@ -6,7 +6,7 @@ export default function JoinForm() {
     <div className={s.main}>
       <div>
         <h2> Quiero unirme a Fedeh como voluntario!</h2>
-        <h6> Los campos marcados con * son obligatorios</h6>
+        
       </div>
       <div className={s.containerForm}>
         <div>
@@ -27,8 +27,13 @@ export default function JoinForm() {
               <h5>Telefono</h5>
               <input></input>
             </div>
+            <div>
+              <h5>Cuentanos un poco de ti</h5>
+              <input></input>
+            </div>
 
             <div>
+            <h6 className={s.obligation}> Los campos marcados con * son obligatorios</h6>
               <button type="submit" className={s.submit}>
                 Enviar
               </button>

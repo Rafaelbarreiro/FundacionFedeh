@@ -2,7 +2,7 @@ import C from "./Carrousel.module.css";
 
 function Carousel() {
   return (
-    <div>
+    <div className={C.container}>
       <div
         id="carouselExampleControls"
         className="carousel slide"
@@ -16,7 +16,7 @@ function Carousel() {
           >
             <img
               className={C.carouselImg}
-              src="https://res.cloudinary.com/degd9cgyd/image/upload/v1672282350/slider_one-2_aozutl.jpg"
+              src="https://res.cloudinary.com/degd9cgyd/image/upload/v1678229904/slider_one-2_aozutl_xtlttj.jpg"
               alt="First slide"
             />
           </div>

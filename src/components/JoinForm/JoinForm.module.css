@@ -19,7 +19,10 @@
 @media screen and (max-width: 500px) {
   .containerForm {
     display: flex;
-    margin-left: 20px;
+    margin-left: 10px;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
   }
   .logo {
     width: 100px;
@@ -29,6 +32,7 @@
   }
   .main {
     margin-top: 0px;
+    padding-top: 30%;
   }
   h2 {
     text-align: center;
@@ -43,5 +47,8 @@
   .submit {
     margin: 15px;
     border-radius: 5px;
+  }
+  .obligation{
+    font-size: 8px;
   }
 }

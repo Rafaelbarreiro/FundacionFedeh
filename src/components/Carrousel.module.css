@@ -6,4 +6,7 @@
   .carouselImg {
     width: auto;
   }
+  .container{
+    padding-top: 120px;
+  }
 }
