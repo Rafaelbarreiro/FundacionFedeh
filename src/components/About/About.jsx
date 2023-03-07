@@ -30,7 +30,7 @@ export default function About(){
                 <span>
                 Nuestras metas y gran parte del camino a transitar ya habían sido trazado por <strong>Federico Eduardo Crux Prats</strong>, que antes de fallecer a causa de una leucemia mieloblástica aguda; nos dejó un mandato, trabajar para que Tucumán cuente con un <strong>CENTRO DE EXCELENCIA PARA EL DIAGNÓSTICO Y EL TRATAMIENTO DE ENFERMEDADES HEMATO-ONCOLÓGICAS</strong>.
                 </span><br/><br/>
-                <span>
+                <span className={s.textAbout}>
                 Seamos partícipes de la transformación del tradicional modelo de reposición de sangre, hacia el nuevo modelo de donación VOLUNTARIA, RESPONSABLE Y GRATUITA.
                 Seamos solidarios sabiendo que:
                 * Se puede donar sangre por lo menos 3 veces al año.

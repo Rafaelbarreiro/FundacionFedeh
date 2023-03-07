@@ -11,7 +11,7 @@ export default function Newsletter(){
 
     return (
         <div className={s.container}>
-           <div className={s.itemMenu}> Suscribite a nuestro Newletter y recibi tomas las novedades de la Fundación </div> 
+           <div className={s.itemMenu}> Suscribite a nuestro Newletter y recibi todas las novedades de la Fundación </div> 
             <div>
              {guest === "default" ? (
                  <>

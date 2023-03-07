@@ -4,7 +4,7 @@
 .main{
     position: relative;
     top: 15vh;
-    
+    margin-bottom: 150px;
 }
 .header {
    
@@ -16,6 +16,8 @@
 }
 .img {
     margin-top: 30px;
+    height: 250px;
+    width: 250px;
     grid-area: img;
 }
 .about {
@@ -39,6 +41,7 @@ p{
 
 .main{
     top: 1vh;
+    margin-bottom: 45px;
 }
 .img{
     width: 85%;
