@@ -7,28 +7,49 @@
     margin-bottom: 150px;
 }
 .header {
-   
     grid-area: header;
     width: 100%;
     justify-content: center;
     align-content: center;
-    
+}
+.contain{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 .img {
     margin-top: 30px;
-    height: 250px;
+    height: 280px;
     width: 250px;
     grid-area: img;
+    border-radius: 10px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 5%;
+    
+}
+.imgF{
+    margin-top: 30px;
+    max-width: 250px;
+    max-height: 280px;
+    border-radius: 10px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 5%;
 }
 .about {
     grid-area: about;
-    width: 70%;
+    width: 80%;
     margin-left: 25px;
 }
 .contact {
     grid-area: contact;
     background-color: red;
     width: 70%;
+}
+.textAbout{
+    width: 80%;
 }
 
 .textHeader {
@@ -37,15 +58,29 @@
 p{
     font-weight: bolder;
 }
+h3{
+    text-align: center;
+}
+h4{
+    text-align: center;
+}
 @media screen and (max-width: 500px){
 
 .main{
     top: 1vh;
     margin-bottom: 45px;
+    padding-top: 20%;
 }
 .img{
     width: 85%;
     margin-left: 8%;
+    height: 100%;
+}
+.imgF{
+    width: 85%;
+    margin-left: 8%;
+    height: 100%;
+    margin-bottom: 0;
 }
 .about{
     width: 85%;
@@ -60,5 +95,10 @@ p{
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+
+.contain{
+    display: flex;
+    flex-direction: column;
 }
 }
