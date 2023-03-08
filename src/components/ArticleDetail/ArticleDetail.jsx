@@ -23,12 +23,15 @@ export default function Detail() {
             <div>
                 <h3> {detailarticle.subtitle} </h3>
             </div>
-            <div className={s.containerimg} >
-            <img src={detailarticle.img} alt="" 
-            className={s.img} />
-            </div>
             <div>
-                <span> {detailarticle.detail} </span>
+                <div className={s.containerimg} >
+                <img src={detailarticle.img} alt="" 
+                className={s.img} />
+                
+                </div>
+                <div>
+                    <span> {detailarticle.detail} </span>
+                </div>
             </div>
             <div className={s.detailImg} >
                 {detailarticle.imgdetail?.map(el =>(

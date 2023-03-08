@@ -15,6 +15,7 @@ export default function About(){
                 <h3 className={s.textHeader} >FEDEH</h3>
                 <h4>Fundación para el Estudio y tratamiento de las Enfermedades Hemato-oncológicas</h4>
             </div>
+            <div className={s.contain} >
             <div>
                 <img src={founder} alt="Img not found" className={s.img} />
                 <div className={s.about} >
@@ -27,19 +28,25 @@ export default function About(){
                 <br/>
                 <span className={s.textAbout} > 
                 <strong>FEDEH</strong> es una organización de bien público sin fines de lucro, que inicia sus actividades en la provincia de Tucumán con el compromiso de colaborar en la articulación del Estudio y lucha De las Enfermedades Hematooncológicas, a través de la generación en la provincia de un centro de atención integral del paciente y su familia, con proyección y extensión a la comunidad.</span>
-                <br/><br/>
+                </div>
+            </div>
+            <div>
                 <img src={federico} alt="Img not found" className={s.imgF} />
-                <h6 className={s.name}>Federico Eduardo Cruz Prats</h6>
+                
                 <span>
                 Nuestras metas y gran parte del camino a transitar ya habían sido trazado por <strong>Federico Eduardo Crux Prats</strong>, que antes de fallecer a causa de una leucemia mieloblástica aguda; nos dejó un mandato, trabajar para que Tucumán cuente con un <strong>CENTRO DE EXCELENCIA PARA EL DIAGNÓSTICO Y EL TRATAMIENTO DE ENFERMEDADES HEMATO-ONCOLÓGICAS</strong>.
                 </span><br/><br/>
                 <span className={s.textAbout}>
                 Seamos partícipes de la transformación del tradicional modelo de reposición de sangre, hacia el nuevo modelo de donación VOLUNTARIA, RESPONSABLE Y GRATUITA.
-                Seamos solidarios sabiendo que:<br/><br/>
-                * Se puede donar sangre por lo menos 3 veces al año.<br/><br/>
-                * Donar sangre no genera daños al organismo ni contagia enfermedades.
+                Seamos solidarios sabiendo que:
                 </span><br/>
-                </div>
+                <span>
+                * Se puede donar sangre por lo menos 3 veces al año.
+                </span><br/>
+                <span>
+                * Donar sangre no genera daños al organismo ni contagia enfermedades.
+                </span>
+            </div>
                 
             </div>
 
