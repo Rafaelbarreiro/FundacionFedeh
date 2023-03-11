@@ -7,5 +7,9 @@
     color: #FFF;
     font-size: 17px;
     font-weight: bold;
+    padding-left: 30%;
 }
-
+.loginBtn{
+    display: flex;
+    justify-content: space-around;
+}
