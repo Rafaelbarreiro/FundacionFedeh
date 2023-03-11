@@ -16,6 +16,32 @@
   margin-right: 0;
   border: solid 1px red;
 }
+input{
+  border-radius: 10px;
+}
+textarea{
+  border-radius: 10px;
+}
+.activeBtn {
+  background: transparent;
+  border: solid 1px red;
+  border-radius: 10px;
+  color: black;
+  font-size: 14px;
+  padding-top: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  cursor: pointer;
+  width: 135px;
+  height: 25px;
+}
+.activeBtn:hover {
+  background-color: grey;
+  color: white;
+  border-color: black;
+  transition: 0.15s ease-in-out;
+}
 @media screen and (max-width: 500px) {
   .containerForm {
     display: flex;

@@ -1,0 +1,63 @@
+.main{
+    padding-top: 10%;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+.title{
+    background-color:#858585;
+    height: 7vh;
+    color: white;
+    display: flex;
+    text-align: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 25px;
+    margin-bottom: 2%;
+}
+.subtitle{
+    border-top: solid 0.5px black;
+    padding-top: 2%;
+    margin-top: 4%;
+    display: flex;
+    justify-content: space-between;
+}
+.amount{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.checked{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 700px){
+    .main{
+        padding-top: 35%;
+    }
+    .title{
+        font-size: 15px;
+        height: 5vh;
+    }
+    .title2{
+        font-size: 10px;
+    }
+    .local{
+        font-size: 10px;
+    }
+    .another{
+        border-radius: 5px;
+        width: 25%;
+    }
+    .subtitle{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-bottom: 3%;
+    }
+    h3{
+        font-size: 15px;
+    }
+}

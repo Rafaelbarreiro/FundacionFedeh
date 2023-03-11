@@ -12,8 +12,18 @@ export default function Detail() {
     useEffect(() =>{
         dispatch(getArticleDetail(params.id))
     }, [dispatch])
-   console.log(detailarticle.imgdetail)
+   //console.log(detailarticle.imgdetail)
+/*    function prueba (detailarticle){
+       const myPara = detailarticle.detail.parse('p')
+       console.log(myPara)
+   }
+   if(detailarticle.detail){
 
+       prueba()
+   } */
+   //console.log(detailarticle.detail)
+  
+ 
 
     return (
         <div className={s.main} >
@@ -23,15 +33,16 @@ export default function Detail() {
             <div>
                 <h3> {detailarticle.subtitle} </h3>
             </div>
-            <div>
+            <div className={s.contain} >
                 <div className={s.containerimg} >
                 <img src={detailarticle.img} alt="" 
                 className={s.img} />
                 
                 </div>
-                <div>
-                    <span> {detailarticle.detail} </span>
+                <div className={s.description} >
+                    <p>{detailarticle.detail} </p>
                 </div>
+               
             </div>
             <div className={s.detailImg} >
                 {detailarticle.imgdetail?.map(el =>(
