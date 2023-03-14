@@ -25,8 +25,8 @@ export default function JoinForm() {
   return (
     <div className={s.main}>
       <div>
-        <h2> Quiero unirme a Fedeh como voluntario!</h2>
-        <h3>Si tenés ganas de sumarte a nuestro equipo, y colaborar con nuestra causa, contanos un poco de vos y nos pondremos en contacto</h3>
+        <h2 className={s.join} > Quiero unirme a Fedeh como voluntario!</h2>
+        <h3 className={s.joinsub} >Si tenés ganas de sumarte a nuestro equipo, y colaborar con nuestra causa, contanos un poco de vos y nos pondremos en contacto</h3>
         
       </div>
       <div className={s.containerForm}>
@@ -70,7 +70,7 @@ export default function JoinForm() {
               value={input.about}
               id="about"
               cols="50"
-              rows="4"
+              rows="5"
               onChange={e => {
                 handleChange(e);
               }}
