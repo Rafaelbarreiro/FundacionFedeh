@@ -14,7 +14,7 @@ export default function Nav(){
               alt=""
               className={F.logo}/>
               <div>
-                <p> Desde 20xx colaborando con la sociedad</p>
+                <p> Desde 2007 colaborando con la sociedad</p>
                 <p>📞 381- 396-7912 </p>
                 <p> ✉ fundacionfedeh@yahoo.com.ar </p>
 

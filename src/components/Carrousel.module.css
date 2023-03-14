@@ -1,0 +1,12 @@
+.carouselImg {
+  width: 50vw;
+}
+
+@media screen and (max-width: 767px) {
+  .carouselImg {
+    width: auto;
+  }
+  .container{
+    padding-top: 120px;
+  }
+}

@@ -1,32 +1,86 @@
 .main {
-    margin-top:00px;
+  padding-top: 100px;
 }
-
-@media screen and (max-width: 500px){
-    .containerForm{
-        display: flex;
-        margin-left: 20px;
-    }
-    .logo{
-        width: 100px;
-        margin-left: 35px;
-        margin-top: 80px;
-    }
-    .main {
-        margin-top: 20px;
-    }
-    h2{
-        text-align: center;
-        margin-left: 10px;
-    }
-    h5{
-        margin-top: 15px;
-    }
-    h6{
-        margin-left: 10px;
-    }
-    .submit{
-        margin: 15px;
-        border-radius: 5px;
-    }
+.containerForm {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.logoContainer {
+  display: flex;
+  width: 100%;
+}
+.logo {
+  margin-right: 0;
+  border: solid 1px red;
+}
+input{
+  border-radius: 10px;
+}
+textarea{
+  border-radius: 10px;
+}
+.activeBtn {
+  background: transparent;
+  border: solid 1px red;
+  border-radius: 10px;
+  color: black;
+  font-size: 14px;
+  padding-top: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  cursor: pointer;
+  width: 135px;
+  height: 25px;
+}
+.activeBtn:hover {
+  background-color: grey;
+  color: white;
+  border-color: black;
+  transition: 0.15s ease-in-out;
+}
+h3{
+  font-size: 18px;
+}
+@media screen and (max-width: 500px) {
+  .containerForm {
+    display: flex;
+    margin-left: 10px;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .logo {
+    width: 100px;
+    margin-left: 35px;
+    margin-top: 80px;
+    display: none;
+  }
+  .main {
+    margin-top: 0px;
+    padding-top: 30%;
+  }
+  h2 {
+    text-align: center;
+    margin-left: 10px;
+  }
+  h5 {
+    margin-top: 15px;
+  }
+  h6 {
+    margin-left: 10px;
+  }
+  h3{
+    font-size: 14px;
+  }
+  .submit {
+    margin: 15px;
+    border-radius: 5px;
+  }
+  .obligation{
+    font-size: 8px;
+  }
 }

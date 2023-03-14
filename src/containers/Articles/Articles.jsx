@@ -1,19 +1,23 @@
-import React from "react";
-import Article from "../../components/Article/Article"
-import jsonArticles from "../../articlesJson/articles.json";
-import a from "./Articles.module.css"
+import React, {useEffect} from "react";
+import Article from "../../components/Article/Article";
+import { useDispatch, useSelector } from "react-redux";
+import a from "./Articles.module.css";
+import {getArticles} from "../../redux/actions/index"
 
-export default function Cards() {
-
+export default function Articles() {
+    const articles = useSelector(state => state.articles)
+    const dispatch = useDispatch();
+  
+    useEffect(() => {
+      dispatch(getArticles())
+    }, [dispatch])
     
 return (
 
 
 <div className={a.grid}>
 
-{jsonArticles.map(el =>(
-
-
+{articles.map(el =>(
     <Article className={a.card}
         key={el.id}
         img={el.img}

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import s from "../About/About.module.css";
+import s from "../Contact/Contact.module.css";
 import Nav from "../NavBar/Nav.jsx";
 
 
@@ -8,7 +8,7 @@ export default function About(){
 
 
     return(
-        <div>
+        <div className={s.container}>
             
             <div className={s.contact} >
                 <h3>COMO CONTACTARNOS:</h3>

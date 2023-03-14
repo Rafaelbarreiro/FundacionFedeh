@@ -1,23 +1,152 @@
 .navBar {
     grid-area: navBar;
   }
+.main{
+    position: relative;
+    top: 15vh;
+    margin-bottom: 150px;
+}
 .header {
     grid-area: header;
-    width: 90%;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+}
+.contain{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+.contain2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+.title2{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
 }
 .img {
+    margin-top: 30px;
+    height: 280px;
+    width: 250px;
     grid-area: img;
+    border-radius: 10px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 5%;
+    
+}
+.imgF{
+    margin-top: 30px;
+    max-width: 250px;
+    max-height: 280px;
+    border-radius: 10px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 5%;
+}
+.pictures{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    
+}
+.img2{
+    width: 250px;
 }
 .about {
     grid-area: about;
-    width: 70%;
+    width: 80%;
+    margin-left: 25px;
 }
 .contact {
     grid-area: contact;
     background-color: red;
     width: 70%;
 }
+.textAbout{
+    width: 80%;
+}
 
 .textHeader {
     width: 80%;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    font-family: inherit;
+}
+p{
+    font-weight: bolder;
+}
+h3{
+    text-align: center;
+}
+h4{
+    text-align: center;
+}
+@media screen and (max-width: 500px){
+
+.main{
+    top: 5vh;
+    margin-bottom: 45px;
+    padding-top: 20%;
+}
+.img{
+    width: 85%;
+    margin-left: 8%;
+    height: 100%;
+}
+.imgF{
+    width: 85%;
+    margin-left: 8%;
+    height: 100%;
+    margin-bottom: 0;
+}
+.about{
+    width: 85%;
+}
+.contact{
+    width: 100%; 
+}
+.textHeader {
+    width: 100%;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.title2{
+    font-weight: bold;
+    text-align: center;
+}
+.pictures{
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.img2{
+    margin-bottom: 5%;
+    margin-top: 5%;
+    padding-top: 5%;
+    width: 95%;
+    height: 80%;
+}
+h6{
+    font-size: 10px;
+}
+.contain{
+    display: flex;
+    flex-direction: column;
+}
+.contain2{
+    display: flex;
+    flex-direction: column;
+}
 }

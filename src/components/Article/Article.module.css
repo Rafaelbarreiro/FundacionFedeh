@@ -1,15 +1,41 @@
 .main {
-    
-    border: solid black 1px;
-   
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    box-shadow:
+    inset 0 -3em 3em rgba(0,0,0,0.1),
+          0 0  0 2px rgb(255,255,255),
+          0.3em 0.3em 1em rgba(0,0,0,0.3);
+          margin: 5%;
 }
 .link{
     text-align: center;
     color: black;
+    margin-left: 5%;
 }
-.img{
+
+.imgContainer{
+    width: 350px;
+    height: 350px;
     display: block;
     margin: auto;
+    justify-content: center;
+    align-content: center;
+    max-height: 250px;
+}
+.img{
+    object-fit: cover;
+    width: auto;
+    max-width: 90%;
+    max-height: 250px;
+  
+  
+}
+.imgcontaint{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
 }
 
 
