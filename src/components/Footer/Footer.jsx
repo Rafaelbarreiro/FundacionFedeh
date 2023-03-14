@@ -22,17 +22,13 @@ export default function Nav(){
               </div>
                 
             </div>
-
+      <div className={F.all} >
             <div className={F.middle} >
                 
                 <div>
 
             <Link className={F.link} to="/about" style={{ textDecoration: "none" }}>
               <li>Quienes Somos</li>
-            </Link>
-            
-            <Link className={F.link} to="/contact" style={{ textDecoration: "none" }}>
-               <li>Contactenos</li>
             </Link>
 
             <Link className={F.link} to="/sumate" style={{ textDecoration: "none" }}>
@@ -55,11 +51,12 @@ export default function Nav(){
 
                 
             </div>
-            <div>
-                <h1>Legales</h1>
+            <div className={F.legal} >
+                <h3>Legales</h3>
                 <h3>Acta Constitutiva</h3>
                 
             </div>
+</div>
             </div>
             <div className={F.dev} >
                 <p> Desarrollado por: Rafael Barreiro</p>
