@@ -26,6 +26,7 @@ export default function JoinForm() {
     <div className={s.main}>
       <div>
         <h2> Quiero unirme a Fedeh como voluntario!</h2>
+        <h3>Si tenés ganas de sumarte a nuestro equipo, y colaborar con nuestra causa, contanos un poco de vos y nos pondremos en contacto</h3>
         
       </div>
       <div className={s.containerForm}>

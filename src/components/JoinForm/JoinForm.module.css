@@ -42,6 +42,9 @@ textarea{
   border-color: black;
   transition: 0.15s ease-in-out;
 }
+h3{
+  font-size: 18px;
+}
 @media screen and (max-width: 500px) {
   .containerForm {
     display: flex;
@@ -69,6 +72,9 @@ textarea{
   }
   h6 {
     margin-left: 10px;
+  }
+  h3{
+    font-size: 14px;
   }
   .submit {
     margin: 15px;
