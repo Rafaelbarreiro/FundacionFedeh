@@ -40,7 +40,13 @@ export default function Detail() {
                 
                 </div>
                 <div className={s.description} >
-                    <p>{detailarticle.detail} </p>
+                    {
+                       detailarticle.detail?.map(el =>(
+                        <div>
+                            <p>{el} </p><br></br>
+                           </div> 
+                       )) 
+                    }
                 </div>
                
             </div>

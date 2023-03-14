@@ -4,6 +4,10 @@ import s from "../About/About.module.css";
 import Nav from "../NavBar/Nav.jsx";
 import founder from "../../Images/founder.png";
 import federico from "../../Images/federico.jpg"
+import martin from "../../Images/martin y los juan.jpg"
+import tenori from "../../Images/fra tenori.jpg";
+import jazz from "../../Images/jazz.jpg";
+import arrieros from "../../Images/viejos arrieros.jpg"
 
 export default function About(){
 
@@ -48,6 +52,29 @@ export default function About(){
                 </span>
             </div>
                 
+            </div>
+            <div>
+                <span>TRabajando con Ilusiones se Construyen Realidades</span><br/>
+                <span>En lo Cultural, cubrimos áreas importantes que convistieron a la solidaridad en actos de servicio y nuestro Logo presidió escenarios de espectáculos artísticos, en los que pasaron solidarios intérpretes provinciales y nacionales.</span>
+                <div>
+                   <div>
+                        <img src={martin} alt="Img not found" className={s.img} />
+                        <h6>Miguel Martin y Los Juan</h6> 
+                    </div> 
+                    <div>
+                    <img src={tenori} alt="Img not found" className={s.img} />
+                    <h6>Fra tenori</h6> 
+                    </div>
+                    <div>
+                    <img src={jazz} alt="Img not found" className={s.img} />
+                    <h6>Noche de Jazz</h6> 
+                    </div>
+                    <div>
+                    <img src={arrieros} alt="Img not found" className={s.img} />
+                    <h6>Viejos Arrieros</h6> 
+                    </div>
+                </div>
+
             </div>
 
         </div>
