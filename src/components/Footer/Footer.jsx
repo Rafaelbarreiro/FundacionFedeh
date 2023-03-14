@@ -61,7 +61,7 @@ export default function Nav(){
                 
             </div>
             </div>
-            <div>
+            <div className={F.dev} >
                 <p> Desarrollado por: Rafael Barreiro</p>
             </div>
         </div>

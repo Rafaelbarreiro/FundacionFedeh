@@ -53,24 +53,24 @@ export default function About(){
             </div>
                 
             </div>
-            <div>
-                <span>TRabajando con Ilusiones se Construyen Realidades</span><br/>
+            <div className={s.contain2} >
+                <span className={s.title2} >Trabajando con Ilusiones se Construyen Realidades</span><br/>
                 <span>En lo Cultural, cubrimos áreas importantes que convistieron a la solidaridad en actos de servicio y nuestro Logo presidió escenarios de espectáculos artísticos, en los que pasaron solidarios intérpretes provinciales y nacionales.</span>
-                <div>
+                <div className={s.pictures} >
                    <div>
-                        <img src={martin} alt="Img not found" className={s.img} />
+                        <img src={martin} alt="Img not found" className={s.img2} />
                         <h6>Miguel Martin y Los Juan</h6> 
                     </div> 
                     <div>
-                    <img src={tenori} alt="Img not found" className={s.img} />
+                    <img src={tenori} alt="Img not found" className={s.img2} />
                     <h6>Fra tenori</h6> 
                     </div>
                     <div>
-                    <img src={jazz} alt="Img not found" className={s.img} />
+                    <img src={jazz} alt="Img not found" className={s.img2} />
                     <h6>Noche de Jazz</h6> 
                     </div>
                     <div>
-                    <img src={arrieros} alt="Img not found" className={s.img} />
+                    <img src={arrieros} alt="Img not found" className={s.img2} />
                     <h6>Viejos Arrieros</h6> 
                     </div>
                 </div>
