@@ -50,29 +50,39 @@ img{
 }
 @media screen and (max-width: 500px){
 .main{
-    padding-top: 30%;
-    margin-left: 5%;
-    margin-right: 5%;
+    padding-top: 35%;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 .description{
-    width: 95%;
+    width: 100%;
     font-size: 14px;
     margin-top: 5%;
 }
-h1{
+.title{
     text-align: center;
-    font-size: 20px;
+    font-size: 26px;
+}
+.subt{
+    font-size: 22px;
 }
 .img{
     margin-bottom: 15px;
 }
 .detailImg{
     display: grid;
-    grid-template-columns: 1fr ;
+    grid-template-columns: repeat(2, 1fr)
 }
 .contain{
     display: flex;
     flex-direction: column;
     
+}
+.text{
+    font-size: 18px;
+}
+.imgContainer{
+    width: 90%;
+    height: 95%;
 }
 }

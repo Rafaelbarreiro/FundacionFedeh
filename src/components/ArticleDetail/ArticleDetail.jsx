@@ -28,10 +28,10 @@ export default function Detail() {
     return (
         <div className={s.main} >
             <div>
-                <h1> {detailarticle.title} </h1>
+                <h1 className={s.title}> {detailarticle.title} </h1>
             </div>
             <div>
-                <h3> {detailarticle.subtitle} </h3>
+                <h3 className={s.subt} > {detailarticle.subtitle} </h3>
             </div>
             <div className={s.contain} >
                 <div className={s.containerimg} >
@@ -43,7 +43,7 @@ export default function Detail() {
                     {
                        detailarticle.detail?.map(el =>(
                         <div>
-                            <p>{el} </p><br></br>
+                            <p className={s.text} >{el} </p><br></br>
                            </div> 
                        )) 
                     }
