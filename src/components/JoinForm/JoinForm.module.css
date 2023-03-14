@@ -61,20 +61,22 @@ h3{
   }
   .main {
     margin-top: 0px;
-    padding-top: 30%;
+    padding-top: 35%;
   }
-  h2 {
+  .join {
     text-align: center;
     margin-left: 10px;
+  }
+  .joinsub{
+    font-size: 14px;
+    margin-left: 3%;
+    margin-right: 3%;
   }
   h5 {
     margin-top: 15px;
   }
   h6 {
     margin-left: 10px;
-  }
-  h3{
-    font-size: 14px;
   }
   .submit {
     margin: 15px;

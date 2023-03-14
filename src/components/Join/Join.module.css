@@ -28,13 +28,17 @@
     .main{
         height: 150px;
         width: 100%;
+        display: flex;
+        flex-direction: column;
     }
     .sumate{
-        margin-left: 5%;
-        margin-top: 80px;
-        padding: 15px;
+        margin: 0;
+        margin-left: 65%;
+        padding-top: 10%;
     }
     .donar{
-        padding: 15px;
+        padding-top: 5%;
+        margin: 0;
+        margin-left: 65%;
     }
 }

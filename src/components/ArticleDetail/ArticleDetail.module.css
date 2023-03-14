@@ -56,7 +56,8 @@ img{
 }
 .description{
     width: 95%;
-    font-size: 12px;
+    font-size: 14px;
+    margin-top: 5%;
 }
 h1{
     text-align: center;
@@ -72,5 +73,6 @@ h1{
 .contain{
     display: flex;
     flex-direction: column;
+    
 }
 }
