@@ -44,6 +44,7 @@ p{
 
 @media screen and (max-width: 600px){
 .main{
+    height: 24vh;
     background-color: red;
     display: flex;
     flex-direction: column;
@@ -72,6 +73,16 @@ p{
 .dev{
     height: 5%;
 }
-
-
+.redesFooter{
+    display: flex;
+    flex-direction: row;
+}
+.all{
+    display: flex;
+    margin-top: 5%;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+}
 }
