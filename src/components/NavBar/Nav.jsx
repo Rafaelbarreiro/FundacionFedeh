@@ -31,11 +31,11 @@ export default function Nav() {
             <Link to="/about" style={{ textDecoration: "none" }}>
               <div className={N.itemMenu}>Quienes Somos</div>
             </Link>
-            <div>
+            {/* <div>
               <Link to="/contact" style={{ textDecoration: "none" }}>
                 <div className={N.itemMenu}>Contactenos</div>
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
 
