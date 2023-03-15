@@ -15,7 +15,8 @@ export default function Nav(){
               className={F.logo}/>
               <div>
                 <p> Desde 2007 colaborando con la sociedad</p>
-                <p>📞 381- 396-7912 </p>
+                <p>Sede 📞 381- 396-7912 </p>
+                <p>Presidencia 📞 381- 502-9738 </p>
                 <p> ✉ fundacionfedeh@yahoo.com.ar </p>
 
               </div>
@@ -35,9 +36,9 @@ export default function Nav(){
                <li>Unite a Fedeh</li>
             </Link>
 
-            <Link className={F.link} to="/sumate" style={{ textDecoration: "none" }}>
+           {/*  <Link className={F.link} to="/contacto" style={{ textDecoration: "none" }}>
                <li>Contacto</li>
-            </Link>
+            </Link> */}
             <div className={F.redesFooter}>
                 <a className={F.link} href="https://www.facebook.com/megustafedeh" style={{ textDecoration: "none" }}>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-facebook" viewBox="0 0 16 16">
@@ -56,7 +57,9 @@ export default function Nav(){
                 
             </div>
             <div className={F.legal} >
-                <h3>Legales</h3>
+            <Link className={F.link} to="/legales" style={{ textDecoration: "none" }}>
+               <li>Acta constitutiva</li>
+            </Link>
                 <h3>Acta Constitutiva</h3>
                 
             </div>
