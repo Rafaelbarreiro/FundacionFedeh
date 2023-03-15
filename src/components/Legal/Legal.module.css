@@ -1,0 +1,28 @@
+.main{
+    padding-top: 25vh;
+    padding-left: 5%;
+}
+.img{
+    object-fit: cover;
+    width:80%;  
+    margin-bottom: 5%;
+}
+.contain{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (max-width: 500px){
+    .img{
+        width: 100%;
+        border: solid 1px black;
+    }.contain{
+        display: flex;
+        flex-direction: column;
+    }
+    .main{
+        padding-top: 18vh;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}

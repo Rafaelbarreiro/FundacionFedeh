@@ -10,6 +10,7 @@ import JoinForm from './components/JoinForm/JoinForm';
 import Donate from './components/Donate/Donate';
 import DashBoard from './containers/Dashboard/DashBoard';
 import Funtioning from "./components/Functioning/Functioning"
+import Legal from './components/Legal/Legal';
 import { ProtectedAdmin } from './components/ProtectedAdmin';
 import { populateDB } from "./redux/actions";
 
@@ -32,6 +33,7 @@ function App() {
           <Route exact path="/sumate" element={<JoinForm />} />
           <Route exact path="/donar" element={<Donate />} />
           <Route exact path="/funcionamiento" element={<Funtioning />} />
+          <Route exact path="/legales" element={<Legal />} />
           <Route
             exact
             path="/dashboard"
