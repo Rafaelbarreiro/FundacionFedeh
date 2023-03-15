@@ -20,16 +20,16 @@ return(
                 <span className={s.work}>Presidente</span>
                 <span className={s.name}>Ana María Juárez de Cruz Prats</span>
                 <span className={s.work}>Secretaria</span>
-                <span className={s.name}>María A. Cruz Prats de Fermoselle</span>
-                <span className={s.work}>Tesorera</span>
-                <span className={s.name}>Angelina Vaquero</span>
-                <span className={s.work}>Vocal Primera</span>
-                <span className={s.name}>Marta Ternavasio</span>
-                <span className={s.work}>Vocal Segunda</span>
                 <span className={s.name}>María de los A. Rovira de Ramos</span>
+                <span className={s.work}>Tesorera</span>
+                <span className={s.name}>Mariana Sawaya</span>
+                <span className={s.work}>Vocal Primera</span>
+                <span className={s.name}>M. Gabriela Martínes de la Orden</span>
+                <span className={s.work}>Vocal Segunda</span>
+                <span className={s.name}>M. Victoria Fonts </span>
             </div>
 
-            <div className={s.contain}>
+            {/* <div className={s.contain}>
                 <span className={s.category} >Departamento de Organización y Gestión Administrativa Informática</span>
                 <span className={s.work}>Coordinadoras</span>
                 <span className={s.name}>Ana María Fonio de Molina</span>
@@ -38,42 +38,47 @@ return(
                 <span className={s.name}>Silvina Elías</span>
                 <span className={s.name}>Josefina Pedraza, Eugenia Araoz</span>
                 <span className={s.name}>Joaquín Fermoselle</span>
-            </div>
+            </div> */}
 
             <div className={s.contain}>
-                <span className={s.category} >Departamento de Acción Social y Organización de Eventos</span>
-                <span className={s.work}>Coordinadoras</span>
-                <span className={s.name}>Mariana Sawaya</span>
-                <span className={s.name}>Rosa Paz de Banano</span>
-                <span className={s.name}>Patricia Jorrat de Rico</span>
-                <span className={s.name}>Carolina Cuello de Mirande</span>
-                <span className={s.name}>Lucas Fermoselle</span>
-                <span className={s.name}>Mariel Marfil de Fermoselle</span>
-                <span className={s.name}>Irene Cruz Prats</span>
+                <span className={s.category} >Colaboradores</span>
+                {/* <span className={s.work}>Coordinadoras</span> */}
+                <span className={s.name}>M. Alejandra Cruz Prats De Fermoselle</span>
+                <span className={s.name}>Juana Bretovisky de Julia</span>
+                <span className={s.name}>Rosa Paz De Bonano</span>
+                <span className={s.name}>Angelina Vaquero</span>
+                <span className={s.name}>Eloísa Martínez Aráoz</span>
+                <span className={s.name}>Carolina Cuello</span>
                 <span className={s.name}>Roxana Ríos</span>
-                <span className={s.name}>Marta Cardenas</span>
-                <span className={s.name}>Blanca Yasbek de Jalil</span>
-                <span className={s.work}>Colaboradora</span>
-                <span className={s.name}>Silvina Elías</span>
+                <span className={s.name}>Patricia Jorrat</span>
+                <span className={s.name}>Noemí Leggio</span>
+                <span className={s.name}>Nora Contreras</span>
+                <span className={s.name}>Ana Cusa</span>
+                <span className={s.name}>Blanca Yasbek De Jalil</span>
+                <span className={s.name}>Marta Ternavasio</span>
+                <span className={s.name}>Mariana Parajón De León</span>
+                <span className={s.name}>Marta Pizarro</span>
+                <span className={s.name}>Cecilia Herbst</span>
+                <span className={s.name}>Carlos Cruz Prats</span>
+                <span className={s.name}>Lucas Fermoselle</span>
             </div>
             </div>
             <div>
 
+         
             <div className={s.contain}>
-                <span className={s.category} >Departamento de Comunicación y Marketing</span>
-                <span className={s.work}>Coordinadoras</span>
-                <span className={s.name}>Juana Bretovisky de Julia</span>
-                <span className={s.name}>Mariana Parajón de León</span>
-                <span className={s.name}>Mariana Cueto</span>
-                <span className={s.name}>Eloísa Martínez Aráoz</span>
-                <span className={s.name}>Alicia de Schilman</span>
-                <span className={s.name}>Roxana Ríos de Ferrao</span>
-                <span className={s.name}>Nora Contreras</span>
+                <span className={s.category} >Asistentes Administrativos Contables</span>
+                <span className={s.name}>Josefina Pedraza Kobak</span>
+                <span className={s.name}>Jessica Tapia Herrera</span>
+                <span className={s.name}>Horacio Colabella</span>
             </div>
-            <div className={s.contain}>
-                <span className={s.category} >Coordinación y Programación Demandas Científicas y Capacitación</span>
-                <span className={s.name}>Dr. Carlos Ríscala</span><br />
-                <span className={s.name}>y Equipo Interdisciplinario del Dpto. Hemato-oncológico</span>
+               <div className={s.contain}>
+                <span className={s.category} >Responsables de Proyectos y Obra</span>
+                <span className={s.work}>Arquitecta</span>
+                <span className={s.name}>Paola Yanicelli</span>
+                <span className={s.work}>Arquitecto</span>
+                <span className={s.name}>Federico Auvieux</span>
+               
             </div>
             <div className={s.congrats} >
             <img
