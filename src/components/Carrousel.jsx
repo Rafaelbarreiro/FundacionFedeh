@@ -8,7 +8,7 @@ function Carousel() {
         className="carousel slide"
         style={{ textAlign: "center" }}
         data-ride="carousel"
-        data-interval="5000"
+        data-interval="4000"
       >
         <div className="carousel-inner">
           <div
