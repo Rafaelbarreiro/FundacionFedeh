@@ -9,6 +9,7 @@ import ArticleDetail from './components/ArticleDetail/ArticleDetail'
 import JoinForm from './components/JoinForm/JoinForm';
 import Donate from './components/Donate/Donate';
 import DashBoard from './containers/Dashboard/DashBoard';
+import Funtioning from "./components/Functioning/Functioning"
 import { ProtectedAdmin } from './components/ProtectedAdmin';
 import { populateDB } from "./redux/actions";
 
@@ -30,6 +31,7 @@ function App() {
           <Route exact path="/detail/:id" element={<ArticleDetail />} />
           <Route exact path="/sumate" element={<JoinForm />} />
           <Route exact path="/donar" element={<Donate />} />
+          <Route exact path="/funcionamiento" element={<Funtioning />} />
           <Route
             exact
             path="/dashboard"
