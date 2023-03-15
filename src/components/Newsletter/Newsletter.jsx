@@ -11,21 +11,24 @@ export default function Newsletter(){
 
     return (
         <div className={s.container}>
-           <div className={s.itemMenu}> Suscribite a nuestro Newletter y recibi todas las novedades de la Fundación </div> 
-            <div>
+           {/* <div className={s.itemMenu}> Registrate y recibi todas las novedades de la Fundación </div>  */}
+            
              {guest === "default" ? (
                  <>
+                 <div className={s.itemMenu}> Registrate y recibi todas las novedades de la Fundación </div> 
                  <div className={s.loginBtn}>
                    <LoginButton />
                  </div>
                </>
              ):(
 
-                 <button type="button" className={s.button} >Suscribirse</button>
+                 <>
+                 <span className={s.itemMenu}>Gracias por ser parte de nuestro sueño</span>
+                 </>
              )
 
              }
-            </div>
+           
            
         </div>
     )
