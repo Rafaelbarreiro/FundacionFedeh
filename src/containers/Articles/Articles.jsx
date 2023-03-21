@@ -17,7 +17,7 @@ return (
 
 <div className={a.grid}>
 
-{articles.map(el =>(
+{articles?.map(el =>(
     <Article className={a.card}
         key={el.id}
         img={el.img}

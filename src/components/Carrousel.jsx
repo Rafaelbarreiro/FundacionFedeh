@@ -1,4 +1,5 @@
 import C from "./Carrousel.module.css";
+import { Link } from "react-router-dom";
 
 function Carousel() {
   return (
@@ -8,8 +9,13 @@ function Carousel() {
         className="carousel slide"
         style={{ textAlign: "center" }}
         data-ride="carousel"
-        data-interval="4000"
+        data-interval="2222000"
       >
+        <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
         <div className="carousel-inner">
           <div
             className="carousel-item active"
@@ -20,20 +26,29 @@ function Carousel() {
               src="https://res.cloudinary.com/degd9cgyd/image/upload/v1678229904/slider_one-2_aozutl_xtlttj.jpg"
               alt="First slide"
             />
+              <Link to="/sumateOdona" style={{ textDecoration: "none" }} className={C.a1} >
+                <div className={C.button}>Sumate a FEDEH</div>
+            </Link>
           </div>
           <div className="carousel-item" style={{ backgroundColor: "#cc162c" }}>
             <img
               className={C.carouselImg}
-              src="https://res.cloudinary.com/degd9cgyd/image/upload/v1674528606/slider_three_xt2xoe_vt91wc.jpg"
+              src="https://res.cloudinary.com/dhmz7s3gc/image/upload/v1679354774/donacion_portada_hdskdv.jpg"
               alt="Second slide"
             />
+              <Link to="/historia" style={{ textDecoration: "none" }} className={C.a1}>
+                <div className={C.button}>Ver Nuestra historia</div>
+            </Link>
           </div>
           <div className="carousel-item">
             <img
               className={C.carouselImg}
-              src="https://res.cloudinary.com/degd9cgyd/image/upload/c_scale,h_381,w_546/v1672020190/gracias_f4vh9s.jpg"
+              src="https://res.cloudinary.com/dhmz7s3gc/image/upload/v1679354944/donarSangre_ercmsc.jpg"
               alt="Third slide"
             />
+              <Link to="/donaciónDeSangre" style={{ textDecoration: "none" }} className={C.a1}>
+                <div className={C.button}>Cómo aportar mi ayuda</div>
+            </Link>
           </div>
         </div>
         <a

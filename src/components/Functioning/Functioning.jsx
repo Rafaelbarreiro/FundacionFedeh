@@ -20,7 +20,7 @@ return(
                 <span className={s.work}>Presidente</span>
                 <span className={s.name}>Ana María Juárez de Cruz Prats</span>
                 <span className={s.work}>Secretaria</span>
-                <span className={s.name}>María de los A. Rovira de Ramos</span>
+                <span className={s.name}>María de los A. Rovira</span>
                 <span className={s.work}>Tesorera</span>
                 <span className={s.name}>Mariana Sawaya</span>
                 <span className={s.work}>Vocal Primera</span>
