@@ -30,12 +30,12 @@
 }
 .title{
     border-bottom: solid 2px #fff;
-    padding-bottom: 10px;
     font-weight: 600;
     font-size: 22pt;
 }
 .description{
-    padding-top: 30px;
+    padding-top: 5px;
+    text-align: justify
 }
 
 @media screen and (max-width: 500px){
@@ -63,9 +63,8 @@
 }
 .description{
     padding: 0;
-    font-size: 13pt;
+    font-size: 11pt;
     text-align: justify;
-    font-weight: bolder;
 }
 .submission{
     padding-top: 10px;

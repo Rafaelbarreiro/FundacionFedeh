@@ -7,7 +7,9 @@ import {
     GET_USER,
     GET_USERS,
     GET_ARTICLES,
-    GET_ARTICLE_ID
+    GET_ARTICLE_ID,
+    GET_EVENTS,
+    GET_EVENT_ID
 } from "../actions/actionName"
 
 const URL = "http://localhost:3001";
@@ -17,6 +19,7 @@ const URL = "http://localhost:3001";
 export async function populateDB() {
   await axios.get(`${URL}/populateDB`);
 }
+
 
 //////////USERS////////
 export const postUser = payload => async dispatch => {
@@ -59,6 +62,21 @@ export function getArticleDetail(id){
     const article = await axios.get(`${URL}/articles/${id}`);
     const payload = article.data;
     return dispatch({type: GET_ARTICLE_ID, payload})
+  }
+}
+
+/////////////EVENTS///////////
+export function getEvents(){
+  return async dispatch => {
+    const res = await axios.get(`${URL}/events`);
+    return dispatch({ type: GET_EVENTS, payload: res.data})
+  };
+};
+export function getEventDetail(id){
+  return async dispatch => {
+    const event = await axios.get(`${URL}/events/${id}`);
+    const payload = event.data;
+    return dispatch({type: GET_EVENT_ID, payload})
   }
 }
 

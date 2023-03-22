@@ -24,15 +24,15 @@ export default function Home() {
             <div className={H.mission} >
               <div className={H.submission} >
                 <span className={H.title} >Misión</span>
-                <p className={H.description} >Ser partícipes de la transformación del tradicional modelo de donación de sangre</p>
+                <p className={H.description} >Que Tucumán cuente con un Centro Especializado y de excelencia, en el diagnóstico y tratamiento de las enfermedades hematooncologicas</p>
               </div>
               <div className={H.submission}>
                 <span className={H.title}>Visión</span>
-                <p className={H.description} >Generar un lugar de excelencia en el país </p>
+                <p className={H.description} >Asistir y contener a los pacientes y familiares para limitar el traslado hacia  Centros de Capital Federal y evitar la angustia del desarraigo</p>
               </div>
               <div className={H.submission}>
                 <span className={H.title}>Valores</span>
-                <p className={H.description} >Apoyo integral del paciente y su familia, a través de la contención emocional </p>
+                <p className={H.description} >Desarrollar la solidaridad y profundizar en la permanente búsqueda de la verdad, el desarrollo de la ciencia y la excelencia profesional, en estudios y tratamientos hematoontologicos</p>
               </div>
             </div>
           </div>

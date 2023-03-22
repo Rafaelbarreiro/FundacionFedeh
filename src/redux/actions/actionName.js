@@ -7,3 +7,7 @@ export const GET_USERS = "GET_USERS";
 //actions ARTICLES
 export const GET_ARTICLES = "GET_ARTICLES";
 export const GET_ARTICLE_ID = "GET_ARTICLE_ID"
+
+//actions ARTICLES
+export const GET_EVENTS = "GET_EVENTS";
+export const GET_EVENT_ID = "GET_EVENT_ID"
