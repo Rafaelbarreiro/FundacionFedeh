@@ -18,11 +18,7 @@
   color: red;
   background-color: white;
 }
-.a1{
-  display: flex;
-    justify-content: flex-end;
-    margin-right: -50px;
-}
+
 /* .second{
   padding-bottom: 0;
 } */

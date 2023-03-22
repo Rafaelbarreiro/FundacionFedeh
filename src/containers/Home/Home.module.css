@@ -5,10 +5,69 @@
     display: grid;
    /*  grid-template-columns: repeat(2, 1fr); */
 }
+.containerMission{
+    background-image: url("https://res.cloudinary.com/dhmz7s3gc/image/upload/v1679444552/mujer2023_hhwf6f.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 300px;
+    padding: 50px 0px 20px 0px;
+}
+.mission{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 250px;
+    justify-content: space-around;
+    color: white;
+}
+.submission{
+    padding-top: 60px;
+    padding-left: 30px;
+    padding-right: 50px;
+    font-size: 15pt;
+    font-weight: 600;
+}
+.title{
+    border-bottom: solid 2px #fff;
+    padding-bottom: 10px;
+    font-weight: 600;
+    font-size: 22pt;
+}
+.description{
+    padding-top: 30px;
+}
 
 @media screen and (max-width: 500px){
+    *{
+        box-sizing: border-box;
+       
+      }
 
 .gridContainer{
     padding-top: 0px
+}
+.containerMission{
+    height: 420px;
+    box-sizing: border-box;
+    padding: 20px 0px 5px 0px;
+}
+.mission{
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    height: 360px;
+}
+.title{
+    padding: 0;
+}
+.description{
+    padding: 0;
+    font-size: 13pt;
+    text-align: justify;
+    font-weight: bolder;
+}
+.submission{
+    padding-top: 10px;
 }
     }
