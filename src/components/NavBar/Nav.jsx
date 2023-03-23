@@ -31,6 +31,7 @@ export default function Nav() {
             <Link to="/about" style={{ textDecoration: "none" }}>
               <div className={N.itemMenu}>Nuestros comienzos</div>
             </Link>
+
             <Link to="/mision" style={{ textDecoration: "none" }}>
                 <div className={N.itemMenu}>Nuestra misión</div>
             </Link>
@@ -40,7 +41,7 @@ export default function Nav() {
             <Link to="/sumateOdona" style={{ textDecoration: "none" }}>
                 <div className={N.itemMenu}>Sumate</div>
             </Link>
-            
+
           </div>
         </div>
 
