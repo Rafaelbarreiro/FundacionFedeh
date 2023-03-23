@@ -17,6 +17,7 @@ import Articles from './containers/Articles/Articles';
 import JoinDonate from "./components/JoinDonate/JoinDonate"
 import History from './components/History/History';
 import BloodDonate from './components/BloodDonate/BloodDonate';
+//importar el eventDetail una vez hecho
 import { ProtectedAdmin } from './components/ProtectedAdmin';
 import { populateDB } from "./redux/actions";
 
@@ -45,6 +46,8 @@ function App() {
           <Route exact path="/historia" element={<History />} />
           <Route exact path="/sumateOdona" element={<JoinDonate />} />
           <Route exact path="/donaciónDeSangre" element={<BloodDonate />} />
+          {/* hacer y cambiar el articledetail por eventdetail */}
+          <Route exact path="/event/:id" element={<ArticleDetail />} />
           <Route
             exact
             path="/dashboard"

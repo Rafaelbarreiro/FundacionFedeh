@@ -36,8 +36,15 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className={H.history} >
+          <div className={H.containerEvents} >
+            <h2>Nuestros Eventos</h2>
             <AllEvents />
+            <div>
+            <p>Enterate de todos los eventos para unir toda la comunidad de FEDEH</p>
+            <button>
+              Ingresar a todos los eventos
+            </button>
+            </div>
           </div>
           <div></div>
           <div>

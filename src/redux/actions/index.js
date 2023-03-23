@@ -68,7 +68,7 @@ export function getArticleDetail(id){
 /////////////EVENTS///////////
 export function getEvents(){
   return async dispatch => {
-    const res = await axios.get(`${URL}/events`);
+    const res = await axios.get(`${URL}/events/`);
     return dispatch({ type: GET_EVENTS, payload: res.data})
   };
 };
