@@ -7,16 +7,23 @@ import {
     GET_USER,
     GET_USERS,
     GET_ARTICLES,
-    GET_ARTICLE_ID
+    GET_ARTICLE_ID,
+    GET_EVENTS,
+    GET_EVENT_ID,
+    GET_COMUNICATIONS,
+    GET_COMUNICATION_ID
 } from "../actions/actionName"
 
-//const URL = "http://localhost:3001";
-const URL = "https://fundacionfedehback-production-6f27.up.railway.app"
+
+const URL = "http://localhost:3001";
+//const URL = "https://fundacionfedehback-production-c10e.up.railway.app"
+
 
 
 export async function populateDB() {
   await axios.get(`${URL}/populateDB`);
 }
+
 
 //////////USERS////////
 export const postUser = payload => async dispatch => {
@@ -62,3 +69,32 @@ export function getArticleDetail(id){
   }
 }
 
+/////////////EVENTS///////////
+export function getEvents(){
+  return async dispatch => {
+    const res = await axios.get(`${URL}/events/`);
+    return dispatch({ type: GET_EVENTS, payload: res.data})
+  };
+};
+export function getEventDetail(id){
+  return async dispatch => {
+    const event = await axios.get(`${URL}/events/${id}`);
+    const payload = event.data;
+    return dispatch({type: GET_EVENT_ID, payload})
+  }
+}
+
+/////////////////COMUNICATION///////////////
+export function getComunications(){
+  return async dispatch => {
+    const res = await axios.get(`${URL}/comunications/`);
+    return dispatch({ type: GET_COMUNICATIONS, payload: res.data})
+  };
+};
+export function getComunicationsDetail(id){
+  return async dispatch => {
+    const event = await axios.get(`${URL}/comunications/${id}`);
+    const payload = event.data;
+    return dispatch({type: GET_COMUNICATION_ID, payload})
+  }
+}

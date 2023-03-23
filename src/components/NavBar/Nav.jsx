@@ -29,26 +29,23 @@ export default function Nav() {
               <div className={N.itemMenu}>Inicio</div>
             </Link>
             <Link to="/about" style={{ textDecoration: "none" }}>
-              <div className={N.itemMenu}>Quienes Somos</div>
+              <div className={N.itemMenu}>Nuestros comienzos</div>
             </Link>
 
-            <div>
-              <Link to="/funcionamiento" style={{ textDecoration: "none" }}>
-                <div className={N.itemMenu}>Organización</div>
+            <Link to="/mision" style={{ textDecoration: "none" }}>
+                <div className={N.itemMenu}>Nuestra misión</div>
+            </Link>
+            <Link to="/contacto" style={{ textDecoration: "none" }}>
+                <div className={N.itemMenu}>Contacto</div>
+            </Link>
+            <Link to="/sumateOdona" style={{ textDecoration: "none" }}>
+                <div className={N.itemMenu}>Sumate</div>
+            </Link>
 
-              </Link>
-            </div> 
           </div>
         </div>
 
-        <div className={N.loginButton}>
-          {isAuthenticated ? (
-            <>
-              <LogoutButton />
-            </>
-          ) : (
-            <LoginButton />
-          )}
+      
           <div className={N.redes}>
             <a
               href="https://www.facebook.com/megustafedeh"
@@ -79,7 +76,7 @@ export default function Nav() {
               </svg>
             </a>{" "}
           </div>
-        </div>
+        
       </div>
     </>
   );

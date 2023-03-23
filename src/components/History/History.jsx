@@ -1,11 +1,13 @@
 import React from "react";
-import s from "../Donate/Donate.module.css"
+import Articles from "../../containers/Articles/Articles";
+import s from "../History/History.module.css"
 
 export default function History(){
 
 return(
-<div>
+<div className={s.main} >
     <span>Primeros Grupos de Trabajo</span>
+    <Articles />
     
 </div>
 
