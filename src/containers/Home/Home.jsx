@@ -5,6 +5,7 @@ import Join from "../../components/Join/Join";
 import Articles from "../Articles/Articles";
 import AllEvents from "../AllEvents/AllEvents";
 import Newsletter from "../../components/Newsletter/Newsletter";
+import AllComunications from "../AllComunications/AllComunications";
 
 
 
@@ -46,7 +47,10 @@ export default function Home() {
             </button>
             </div>
           </div>
-          <div></div>
+          <div>
+            <span>Ultimas novedades</span>
+            <AllComunications />
+          </div>
           <div>
             <Newsletter/>
           </div>

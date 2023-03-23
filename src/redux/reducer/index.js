@@ -6,7 +6,9 @@ import {
   GET_ARTICLES,
   GET_ARTICLE_ID,
   GET_EVENTS,
-  GET_EVENT_ID
+  GET_EVENT_ID,
+  GET_COMUNICATIONS,
+  GET_COMUNICATION_ID
 } from "../actions/actionName"
 
 const initialState = {
@@ -15,7 +17,9 @@ const initialState = {
   articles: [],
   article: {},
   events: [],
-  event: []
+  event: [],
+  comunications: [],
+  comunication: []
   };
 
 function rootReducer(state = initialState, action) {
@@ -71,7 +75,18 @@ case GET_EVENT_ID:
         ...state,
         event: action.payload,
       };
-
+///////////COMUNICATIONS//////////////
+case GET_COMUNICATIONS: {
+  return {
+    ...state,
+    comunications: action.payload,
+  };
+};
+case GET_COMUNICATION_ID:
+      return {
+        ...state,
+        comunication: action.payload,
+      };
   
         
     

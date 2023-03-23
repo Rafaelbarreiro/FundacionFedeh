@@ -4,9 +4,12 @@ import { Link } from "react-router-dom"
 
 export default function Event(props){
     const description = props.detail
+
+    console.log(props.date)
     return (
         <div className={s.main}>
             <div className={s.container}>
+                <h2>{props.date} </h2>
                  <img src={props.img} alt="" className={s.img}/>
             <div className={s.subitem} >
                 <h2 className={s.title}>{props.title}</h2> 

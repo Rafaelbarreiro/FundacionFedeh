@@ -9,7 +9,9 @@ import {
     GET_ARTICLES,
     GET_ARTICLE_ID,
     GET_EVENTS,
-    GET_EVENT_ID
+    GET_EVENT_ID,
+    GET_COMUNICATIONS,
+    GET_COMUNICATION_ID
 } from "../actions/actionName"
 
 const URL = "http://localhost:3001";
@@ -80,3 +82,17 @@ export function getEventDetail(id){
   }
 }
 
+/////////////////COMUNICATION///////////////
+export function getComunications(){
+  return async dispatch => {
+    const res = await axios.get(`${URL}/comunications/`);
+    return dispatch({ type: GET_COMUNICATIONS, payload: res.data})
+  };
+};
+export function getComunicationsDetail(id){
+  return async dispatch => {
+    const event = await axios.get(`${URL}/comunications/${id}`);
+    const payload = event.data;
+    return dispatch({type: GET_COMUNICATION_ID, payload})
+  }
+}

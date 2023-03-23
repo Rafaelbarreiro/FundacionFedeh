@@ -35,10 +35,11 @@
 }
 .description{
     padding-top: 5px;
-    text-align: justify
+    text-align: justify;
+    font-size: 13pt;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 600px){
     *{
         box-sizing: border-box;
        
