@@ -15,7 +15,8 @@ import {
 } from "../actions/actionName"
 
 //const URL = "http://localhost:3001";
-const URL = "https://fundacionfedehback-production-c10e.up.railway.app"
+const URL = "https://fundacionfedehback-production-6f27.up.railway.app"
+//const URL = "https://fundacionfedehback-production-c10e.up.railway.app"
 
 
 export async function populateDB() {
