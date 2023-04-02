@@ -11,8 +11,18 @@ import Donate from './components/Donate/Donate';
 import DashBoard from './containers/Dashboard/DashBoard';
 import Funtioning from "./components/Functioning/Functioning"
 import Legal from './components/Legal/Legal';
+import Contact from "./components/Contact/Contact";
+import Mission from './components/OurMission/OurMission';
+import Articles from './containers/Articles/Articles';
+import JoinDonate from "./components/JoinDonate/JoinDonate"
+import History from './components/History/History';
+import BloodDonate from './components/BloodDonate/BloodDonate';
+import EventDetail from './components/EventDetail/EventDetail';
+import AllEvents from './containers/AllEvents/AllEvents'
+//importar el eventDetail una vez hecho
 import { ProtectedAdmin } from './components/ProtectedAdmin';
 import { populateDB } from "./redux/actions";
+
 
 
 
@@ -34,6 +44,14 @@ function App() {
           <Route exact path="/donar" element={<Donate />} />
           <Route exact path="/funcionamiento" element={<Funtioning />} />
           <Route exact path="/legales" element={<Legal />} />
+          <Route exact path="/contacto" element={<Contact />} />
+          <Route exact path="/mision" element={<Mission />} />
+          <Route exact path="/historia" element={<History />} />
+          <Route exact path="/sumateOdona" element={<JoinDonate />} />
+          <Route exact path="/donaciónDeSangre" element={<BloodDonate />} />
+          {/* hacer y cambiar el articledetail por eventdetail */}
+          <Route exact path="/event/:id" element={<EventDetail />} />
+          <Route exact path="/events" element={<AllEvents />} />
           <Route
             exact
             path="/dashboard"

@@ -15,8 +15,9 @@ export default function Nav(){
               className={F.logo}/>
               <div>
                 <p> Desde 2007 colaborando con la sociedad</p>
-                <p>Sede 📞 381- 396-7912 </p>
-                <p>Presidencia 📞 381- 502-9738 </p>
+                <p>Sede ✆ 381- 396-7912 </p>
+                <p>Presidencia ✆ 381- 502-9738 </p>
+                <p>Mendoza 128 - 3er piso </p>
                 <p> ✉ fundacionfedeh@yahoo.com.ar </p>
 
               </div>
@@ -25,18 +26,20 @@ export default function Nav(){
             </div>
       <div className={F.all} >
             <div className={F.middle} >
-                
                 <div>
-
             <Link className={F.link} to="/about" style={{ textDecoration: "none" }}>
-              <li>Quienes Somos</li>
+              <li>Nuestros comienzos</li>
             </Link>
-
             <Link className={F.link} to="/sumate" style={{ textDecoration: "none" }}>
                <li>Unite a Fedeh</li>
             </Link>
-
-
+            <Link className={F.link} to="/legales" style={{ textDecoration: "none" }}>
+               <li>Acta constitutiva</li>
+            </Link>
+            <Link className={F.link} to="/funcionamiento" style={{ textDecoration: "none" }}>
+                <li >Organización</li>
+            </Link>
+            </div>
             <div className={F.redesFooter}>
                 <a className={F.link} href="https://www.facebook.com/megustafedeh" style={{ textDecoration: "none" }}>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-facebook" viewBox="0 0 16 16">
@@ -51,15 +54,8 @@ export default function Nav(){
 <br></br>
                 </div>
             <br></br>
-                </div>
+                
 
-                
-            </div>
-            <div className={F.legal} >
-            <Link className={F.link} to="/legales" style={{ textDecoration: "none" }}>
-               <li>Acta constitutiva</li>
-            </Link>
-                
                 
             </div>
 </div>
