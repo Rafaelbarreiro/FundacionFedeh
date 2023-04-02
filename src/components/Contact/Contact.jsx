@@ -1,5 +1,4 @@
 import React from "react";
-
 import s from "../Contact/Contact.module.css"
 
 
@@ -85,6 +84,6 @@ return(
             </div>
         </div>
 
-
+    </div>
 )
 }
