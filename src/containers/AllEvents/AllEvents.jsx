@@ -20,7 +20,7 @@ export default function AllEvents(){
 
 return (
     <div className={s.grid}>
-        {lastEvents?.reverse().map(el =>(
+        {events?.reverse().map(el =>(
     <Event 
         key={el.id}
         img={el.img}

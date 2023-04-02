@@ -9,10 +9,10 @@ import Auth0ProviderWithHistory from "./auth0/Auth0ProviderWithHistory";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Auth0ProviderWithHistory>
+    {/* <Auth0ProviderWithHistory> */}
       <Provider store={store}>
         <App />
       </Provider>
-    </Auth0ProviderWithHistory>
+    {/* </Auth0ProviderWithHistory> */}
   </React.StrictMode>
 )

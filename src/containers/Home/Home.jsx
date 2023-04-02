@@ -1,15 +1,44 @@
 import React from "react";
+import { useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
+import { getEvents } from "../../redux/actions";
 import Carousel from "../../components/Carrousel";
 import H from "../Home/Home.module.css";
 import Join from "../../components/Join/Join";
-import Articles from "../Articles/Articles";
-import AllEvents from "../AllEvents/AllEvents";
 import Newsletter from "../../components/Newsletter/Newsletter";
 import AllComunications from "../AllComunications/AllComunications";
+import Event from "../../components/Event/Event";
 
 
 
 export default function Home() {
+  
+  const dispatch = useDispatch();
+  const [renderizar, setRenderizar] = useState([]);
+  const events = useSelector(state => state.events)
+
+  useEffect(() => {
+    dispatch(getEvents())
+}, [dispatch])
+const lastEvents = events.slice(0,3)
+
+useEffect(() => {
+  setRenderizar(
+    lastEvents?.reverse().map(el => (
+      <Event
+      key={el.id}
+      img={el.img}
+      title={el.title}
+      subtitle={el.subtitle}
+      id={el.id}
+      detail={el.detail}
+      date={el.date}
+      />
+  ))
+)
+},[events]);
   
    
   return (
@@ -39,12 +68,17 @@ export default function Home() {
           </div>
           <div className={H.containerEvents} >
             <h2>Nuestros Eventos</h2>
-            <AllEvents />
+            <div className={H.grid} >
+              {renderizar}
+            </div>
+           
             <div>
             <p>Enterate de todos los eventos para unir toda la comunidad de FEDEH</p>
-            <button>
-              Ingresar a todos los eventos
-            </button>
+            <Link to={`/events`} >
+              <button>
+                Ingresar a todos los eventos
+              </button>
+            </Link>
             </div>
           </div>
           <div>

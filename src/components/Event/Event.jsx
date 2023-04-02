@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 export default function Event(props){
     const description = props.detail
 
-    console.log(props.date)
+   // console.log(props.date)
     return (
         <div className={s.main}>
             <div className={s.container}>
