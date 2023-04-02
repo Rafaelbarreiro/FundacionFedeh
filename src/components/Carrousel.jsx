@@ -9,7 +9,7 @@ function Carousel() {
         className="carousel slide"
         style={{ textAlign: "center" }}
         data-ride="carousel"
-        data-interval="2222000"
+        data-interval="2500"
       >
         <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -21,21 +21,29 @@ function Carousel() {
             className="carousel-item active"
             style={{ backgroundColor: "#f0e359" }}
           >
+         
             <img
               className={C.carouselImg}
               src="https://res.cloudinary.com/degd9cgyd/image/upload/v1678229904/slider_one-2_aozutl_xtlttj.jpg"
               alt="First slide"
             />
+         
               <Link to="/sumateOdona" style={{ textDecoration: "none" }} className={C.a1} >
                 <div className={C.button}>Sumate a FEDEH</div>
             </Link>
           </div>
           <div className="carousel-item" style={{ backgroundColor: "#cc162c" }}>
+          <div class="carousel-caption d-none d-md-block">
+    <h5>Conocenos un poco más</h5>
+    
+  </div>
             <img
               className={C.carouselImg}
               src="https://res.cloudinary.com/dhmz7s3gc/image/upload/v1679354774/donacion_portada_hdskdv.jpg"
               alt="Second slide"
             />
+            
+            
               <Link to="/historia" style={{ textDecoration: "none" }} className={C.a1}>
                 <div className={C.button}>Ver Nuestra historia</div>
             </Link>
