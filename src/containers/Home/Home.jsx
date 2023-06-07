@@ -67,31 +67,33 @@ useEffect(() => {
             </div>
           </div>
           <div className={H.containerEvents} >
-            <h2>Nuestros Eventos</h2>
+            <div>
+            <div id="triangulo_div" /* class="col-sm-2 triangulo_div" */><p className={H.triangulo_rectangulo}>triangulo rectangulo.</p></div>
+            </div>
+            <div>
+            <h2 className={H.events} >Nuestros Eventos</h2>
             <div className={H.grid} >
               {renderizar}
             </div>
-           
-            <div>
-            <p>Enterate de todos los eventos para unir toda la comunidad de FEDEH</p>
-            <Link to={`/events`} >
-              <button>
-                Ingresar a todos los eventos
-              </button>
-            </Link>
+              <Link to={`/events`} >
+                <button>
+                  Ingresar a todos los eventos
+                </button>
+              </Link>
             </div>
           </div>
-          <div>
-            <span>Ultimas novedades</span>
-            <AllComunications />
+
+          <div className={H.AllComunications} > 
+                <AllComunications />
           </div>
+            
+          <div className={H.join} >
+                <Join />
+          </div>
+         
           <div>
             <Newsletter/>
           </div>
-          <div>
-            <Join />
-          </div>
-        
         </div>
   );
 }

@@ -20,18 +20,34 @@ export default function AllComunications(){
 
 
 return (
-    <div className={s.grid}>
-        {lastComunications?.reverse().map(el =>(
-    <Event 
-        key={el.id}
-        img={el.img}
-        title={el.title}
-        subtitle={el.subtitle}
-        id={el.id}
-        detail={el.detail}
-        date={el.date}
-    />
-    ) )}
+    <div className={s.main} >
+
+            <div id="triangulo_div" /* class="col-sm-2 triangulo_div" */><p className={s.triangulo_rectangulo}>triangulo rectangulo.</p></div>
+        
+        <div className={s.main2}>
+            <div>
+            <h2 className={s.title} >Ultimas novedades</h2>
+            </div>
+
+            <div className={s.grid}>  
+                
+                {lastComunications?.reverse().map(el =>(
+            <Event 
+                key={el.id}
+                img={el.img}
+                title={el.title}
+                subtitle={el.subtitle}
+                id={el.id}
+                detail={el.detail}
+                date={el.date}
+            />
+            ) )}
+                
+            </div>
+
+        </div>
+
+
     </div>
 )
 }

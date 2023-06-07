@@ -9,7 +9,7 @@ function Carousel() {
         className="carousel slide"
         style={{ textAlign: "center" }}
         data-ride="carousel"
-        data-interval="2500"
+        data-interval="4500"
       >
         <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
