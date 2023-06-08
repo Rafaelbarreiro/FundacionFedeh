@@ -1,91 +1,138 @@
-.main{
-    height: 30vh;
-    background-color: red;
+.main {
+    height: auto;
+    width: 100%;
+    background-color: #bc2c34;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-top: 20px;
     justify-items: center;
-    color: #FFF;
+    color: whitesmoke;
     align-items: center;
-    margin-bottom: 0;
-}
-.icon{
+    padding-bottom: 15px;
+  }
+  
+  .info {
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  
+  .info p {
+    text-align: start;
+    font-weight: 400;
+  }
+  
+  .icon {
     width: 1px;
     height: 1px;
-    background-color: red;
-}
-
-.logo{
+    padding: 10px;
+  }
+  
+  .logo {
     width: 120px;
     height: 120px;
-    padding: 5px;
-}
-
-.contact{
+    padding: 10px;
+  }
+  
+  .contact {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-p{
+    justify-content: start;
+    align-items: start;
+  }
+  
+  p {
     margin-bottom: 0;
     text-align: center;
     width: 100%;
-}
-.redesFooter{
-    margin-top: 20px;
-}
-
-.link{
-    color: #Fff;
-}
-
-@media screen and (max-width: 600px){
-.main{
-    height: 24vh;
-    background-color: red;
+  }
+  
+  .redesFooter {
+    align-items: start;
     display: flex;
-    flex-direction: column;
-}
-.contact{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    color: rgb(255, 255, 255);
-}
-.logo{
-    width: 80px;
-    height: 80px;
+    justify-content: center;
+    align-items: start;
+  }
+  
+  .redesFooter a {
     padding: 5px;
-}
-p{
-    margin-bottom: 0;
-}
-.middle{
-    display: flex;
-    flex-direction: row;
-    margin-left: 15px;
-    padding: 15px;
-    padding-top: 0px;
-}
-.dev{
-    height: 5%;
-}
-.redesFooter{
-    display: flex;
-    flex-direction: row;
-    margin-top: 10px;
+    text-align: start;
+  }
+  
+  .link {
+    color: whitesmoke;
+  }
+  
+  .link:hover {
+    color: wheat;
+  }
+  
+  .middle {
+    margin-top: 120px;
+    text-decoration: underline;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .main {
+      grid-template-columns: 1fr;
+      justify-items: start;
+      padding: 10px;
+    }
     
-}
-.all{
-    display: flex;
-    margin-top: 5%;
-}
-.contact{
-    display: flex;
-    flex-direction: row;
-}
+    .info {
+      align-items: flex-start;
+    }
+    
+    .logo {
+      width: 70px;
+      height: 70px;
+    }
 
-}
+    .link {
+        color: whitesmoke;
+      }
+    
+    .contact {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: start;
+      align-items: start;
+      text-align: center;
+      width: 100%;
+
+    }
+
+  
+    p {
+      margin-bottom: 0;
+      text-align: center;
+      width: 100%;
+      font-size: 13px;
+    }
+  
+    .middle {
+      margin-top: 10px;
+      width: 100%;
+      font-size: 14px;
+      text-decoration: underline;
+    }
+    
+    .redesFooter {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .redesFooter a {
+      padding: 5px;
+      padding-top: 10px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+    }
+  }
+  
+  

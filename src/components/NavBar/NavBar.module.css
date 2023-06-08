@@ -1,5 +1,5 @@
 .container {
-  background-color: red;
+  background-color: #bc2c34;
   /* background-color: #d62828; */
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
@@ -59,7 +59,6 @@
 .logo {
   position: relative;
   margin-left: 8px;
-  /* margin-top: 8px; */
   overflow: hidden;
   width: 40%;
 }

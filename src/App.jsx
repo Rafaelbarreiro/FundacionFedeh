@@ -22,20 +22,20 @@ import AllEvents from './containers/AllEvents/AllEvents'
 //importar el eventDetail una vez hecho
 import { ProtectedAdmin } from './components/ProtectedAdmin';
 import { populateDB } from "./redux/actions";
-
+import Donaciones from './ComponentesDos/Donacion'
 
 
 
 function App() {
   populateDB();
 
- 
+
 
   return (
     <div >
 
       <BrowserRouter>
-        <Nav/>
+        <Nav />
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/about" element={<About />} />
@@ -52,6 +52,13 @@ function App() {
           {/* hacer y cambiar el articledetail por eventdetail */}
           <Route exact path="/event/:id" element={<EventDetail />} />
           <Route exact path="/events" element={<AllEvents />} />
+          {/* Rutas nuevas para mostrar los componentes*/}
+          < Route path='/donaciones' element={<Donaciones />} />
+
+
+
+
+          {/* Rutas nuevas para mostrar los componentes*/}
           <Route
             exact
             path="/dashboard"
@@ -62,10 +69,10 @@ function App() {
             }
           />
         </Routes>
-       <Footer/>
+        <Footer />
       </BrowserRouter>
-     
-      
+
+
     </div>
   )
 }
