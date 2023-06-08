@@ -1,44 +1,188 @@
 .main{
-    background: url("../../Images/background.jpg") ;
-    height: 200px;
+    
     display: flex;
-    margin-top: 20px;
+    width: 100%;
+    justify-content: space-around;
+    /* padding-top: 20px; */
+    background-color: rgba(128, 134, 128, 0);
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    justify-content: space-around;
+    margin-left: 5%;
+    margin-right: 15%;
+    padding-right: 10%;
+    height: auto;
+   
+}
+.contain{
+  display: flex;
+  flex-direction: column;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    
+}
+.title{
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+}
+.maintitle{
+    color: black;
+}
+.cardcontainer{
+    border-radius: 15px;
+     background-image: url(../../Images//manosDonando.png);
+     height: 250px;
+     background-size: cover; 
+     
+}
+.cardcontainer2{
+    border-radius: 15px;
+     background-image: url(../../Images//manosDonando.png);
+     height: 30%;
+}
+.slidecontainer{
+  /* max-width: 1120px; */
+  width: 100%;
+  /* padding: 40px 0; */
+}
+.triangulo_rectangulo {
+  width: 0;
+  height: 0;
+  text-indent: -9999px;
+  border-top: 50vh solid #FE6A04;
+  border-right: 50px solid transparent;
+}
+.slidecontent{
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.card{
+  border-radius: 25px;
+  background-color: rgb(240, 227, 89);
+}
+/* .imagecontent,
+.cardcontent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+ /*  padding: 10px 14px; */
+.imagecontent{
+ /*  position: relative; */
+  row-gap: 5px;
+  padding: 0px 0;
+}
+
+
+.sumate{
+  text-align: center;
+  background-color: rgb(236 231 231 / 50%);
+}
+.sumate2{
+  max-width: 80%;
+  text-align: center;
+ margin-left: 10%;
+}
+.cardimage{
+  position: relative;
+  height: 40%;
+  width: 100%;
+  border-radius: 10%;
+  
+}
+
+.name{
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+.description{
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
 }
 .button{
-    border-radius: 5px;
-    color: #fff;
-    background-color: #dc3545;
-    border-color: #dc3545;
-    width: 80px;
-    height: 36px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  padding: 8px 16px;
+  background-color: rgb(240, 227, 89);
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: #333;
 }
 .button:hover{
-    background-color: red;
+  background: #265DF2;
 }
-.sumate{
-    margin-left: 35%;
-    margin-top: 80px;
+
+
+
+@media screen and (max-width: 768px) {
+  .slidecontent{
+    margin: 0 10px;
+    margin-bottom: 10%;
+  }
+  .triangulo_rectangulo{
+    display: none;
+  }
+ 
+  .card{
+    margin-bottom: 10%;
+    text-align: center;
+  }
+  .slidecontainer{
+    text-align: center;
+  }
+  .cardimage{
+    height: 150px;
+    width: 70%;
+    margin-left: 15%;
+    display: flex;
+    align-items: center;
+    
+    
+  }
+  
+  .container{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .sumate2{
+    font-family: fantasy;
+    text-align: center;
+    margin-left: 10%;
+  }
+  .sumate3{
+    font-family: fantasy;
+    text-align: center;
+    
+  }
+  
 }
-.donar{
-    margin-left: 20%;
-    margin-top: 80px;
-}
+
 
 @media screen and (max-width: 500px){
     .main{
-        height: 150px;
+        height: auto;
         width: 100%;
         display: flex;
         flex-direction: column;
     }
-    .sumate{
-        margin: 0;
-        margin-left: 65%;
-        padding-top: 10%;
-    }
-    .donar{
-        padding-top: 5%;
-        margin: 0;
-        margin-left: 65%;
-    }
+    .container{
+    display: flex;
+    flex-direction: column;
+}
+
+    
 }
