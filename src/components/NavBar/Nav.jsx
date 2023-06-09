@@ -31,9 +31,9 @@ export default function Nav() {
             <Link to="/about" style={{ textDecoration: "none" }}>
               <div className={N.itemMenu}>Nuestros comienzos</div>
             </Link>
-            <Link to="/mision" style={{ textDecoration: "none" }}>
+            {/* <Link to="/mision" style={{ textDecoration: "none" }}>
                 <div className={N.itemMenu}>Nuestra misión</div>
-            </Link>
+            </Link> */}
             <Link to="/contacto" style={{ textDecoration: "none" }}>
                 <div className={N.itemMenu}>Contacto</div>
             </Link>

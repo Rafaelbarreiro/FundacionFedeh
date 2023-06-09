@@ -17,20 +17,23 @@ return(
     <div className={s.container}>
         <div className={s.slidecontainer}>
           <div className={s.card}>
+         <Link to="/donar">
             <h2 className={s.sumate2} >COMO DONANTE</h2>
-            
             <div className={s.imagecontent}>
             <img src={donateCash} alt="" className={s.cardimage}/>
             </div>
+          </Link> 
           </div>
         </div > 
 
         <div className={s.slidecontainer}>
         <div className={s.card}>
+          <Link to="/sumate">
         <h2 className={s.sumate2} >COMO VOLUNTARIO</h2>
             <div className={s.imagecontent}>
             <img src={donacion} alt="" className={s.cardimage}/>
             </div>
+          </Link>
           </div>
         </div>
 
