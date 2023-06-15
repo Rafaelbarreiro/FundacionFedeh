@@ -27,7 +27,7 @@ import Donaciones from './ComponentesDos/Donacion'
 
 
 function App() {
-  populateDB();
+  //populateDB();
 
 
 

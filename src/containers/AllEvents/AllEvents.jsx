@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import Event from "../../components/Event/Event";
 import { useEffect } from "react";
 import { getEvents } from "../../redux/actions";
+import moment from "moment"
 import s from "./AllEvents.module.css"
 
 
@@ -28,7 +29,7 @@ return (
         subtitle={el.subtitle}
         id={el.id}
         detail={el.detail}
-        date={el.date}
+        date= {el.date}
     />
     ) )}
     </div>
