@@ -50,7 +50,7 @@ function App() {
           <Route exact path="/sumateOdona" element={<JoinDonate />} />
           <Route exact path="/donaciónDeSangre" element={<BloodDonate />} />
           {/* hacer y cambiar el articledetail por eventdetail */}
-          <Route exact path="/event/:id" element={<EventDetail />} />
+          <Route exact path="/event/:_id" element={<EventDetail />} />
           <Route exact path="/events" element={<AllEvents />} />
           {/* Rutas nuevas para mostrar los componentes*/}
           < Route path='/donaciones' element={<Donaciones />} />

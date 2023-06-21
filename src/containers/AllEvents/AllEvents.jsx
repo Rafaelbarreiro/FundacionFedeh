@@ -15,22 +15,25 @@ export default function AllEvents(){
         dispatch(getEvents())
     }, [dispatch])
     const lastEvents = events.slice(0,3)
-    
+    console.log(events)
    
 
 
 return (
     <div className={s.grid}>
         {events?.reverse().map(el =>(
+            
     <Event 
-        key={el.id}
+        key={el._id}
         img={el.img}
         title={el.title}
         subtitle={el.subtitle}
-        id={el.id}
+        _id={el._id}
         detail={el.detail}
         date= {el.date}
+        
     />
+    
     ) )}
     </div>
 )

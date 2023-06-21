@@ -32,7 +32,7 @@ useEffect(() => {
       img={el.img}
       title={el.title}
       subtitle={el.subtitle}
-      id={el.id}
+      _id={el._id}
       detail={el.detail}
       date={el.date}
       />
