@@ -10,7 +10,7 @@ export default function EventDetail() {
     const detailarticle = useSelector(state => state.event)
 
     useEffect(() =>{
-        dispatch(getEventDetail(params.id))
+        dispatch(getEventDetail(params._id))
     }, [dispatch])
 
 

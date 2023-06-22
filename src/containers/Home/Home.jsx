@@ -40,6 +40,23 @@ export default function Home() {
     )
   }, [events]);
 
+useEffect(() => {
+  setRenderizar(
+    lastEvents?.reverse().map(el => (
+      <Event
+      key={el.id}
+      img={el.img}
+      title={el.title}
+      subtitle={el.subtitle}
+      _id={el._id}
+      detail={el.detail}
+      date={el.date}
+      />
+  ))
+)
+},[events]);
+  
+   
   return (
     <div className={H.gridContainer}>
 
