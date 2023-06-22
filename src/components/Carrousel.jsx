@@ -1,7 +1,7 @@
 import C from "./Carrousel.module.css";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import donar from '../Images/donarsangre.jpg';
+import donar from '../Images/donarSangre.jpg';
 import fotodos from '../Images/fedeDonation.jpg';
 import fototres from '../Images/imagentres.jpeg';
 import bienvenidos from '../Images/bienvenidos.png'
