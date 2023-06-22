@@ -1,88 +1,54 @@
 import C from "./Carrousel.module.css";
 import { Link } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import donar from '../Images/donarsangre.jpg';
+import fotodos from '../Images/fedeDonation.jpg';
+import fototres from '../Images/imagentres.jpeg';
+import bienvenidos from '../Images/bienvenidos.png'
 
 function Carousel() {
   return (
-    <div className={C.container}>
-      <div
-        id="carouselExampleControls"
-        className="carousel slide"
-        style={{ textAlign: "center" }}
-        data-ride="carousel"
-        data-interval="2500"
-      >
-        <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-        <div className="carousel-inner">
-          <div
-            className="carousel-item active"
-            style={{ backgroundColor: "#f0e359" }}
-          >
-         
-            <img
-              className={C.carouselImg}
-              src="https://res.cloudinary.com/degd9cgyd/image/upload/v1678229904/slider_one-2_aozutl_xtlttj.jpg"
-              alt="First slide"
-            />
-         
-              <Link to="/sumateOdona" style={{ textDecoration: "none" }} className={C.a1} >
-                <div className={C.button}>Sumate a FEDEH</div>
-            </Link>
-          </div>
-          <div className="carousel-item" style={{ backgroundColor: "#cc162c" }}>
-          <div class="carousel-caption d-none d-md-block">
-    <h5>Conocenos un poco más</h5>
-    
-  </div>
-            <img
-              className={C.carouselImg}
-              src="https://res.cloudinary.com/dhmz7s3gc/image/upload/v1679354774/donacion_portada_hdskdv.jpg"
-              alt="Second slide"
-            />
-            
-            
-              <Link to="/historia" style={{ textDecoration: "none" }} className={C.a1}>
-                <div className={C.button}>Ver Nuestra historia</div>
-            </Link>
-          </div>
-          <div className="carousel-item">
-            <img
-              className={C.carouselImg}
-              src="https://res.cloudinary.com/dhmz7s3gc/image/upload/v1679354944/donarSangre_ercmsc.jpg"
-              alt="Third slide"
-            />
-              <Link to="/donaciónDeSangre" style={{ textDecoration: "none" }} className={C.a1}>
-                <div className={C.button}>Cómo aportar mi ayuda</div>
-            </Link>
+    <div className={C.carouselWrapper}>
+      <div className={C.bienvenidos}>
+        <img className={C.imgInicio} src={bienvenidos} alt="bienvenido" />
+      </div>
+      <div className="row">
+        <div className="col">
+          <div className={C.containerImage}>
+            <img className={C.carouselImage} src={donar} alt="Primera imagen" />
+            <div className={C.imageCaption}>
+              <h3 style={{ paddingTop: '10px', }}>Un acto de donación, un mundo de amor</h3>
+              <div className="d-flex justify-content-center">
+                {/* <Link> */}
+                <button className={C.btn}>Como aportar mi ayuda</button>
+                {/* </Link> */}
+
+              </div>
+            </div>
           </div>
         </div>
-        <a
-          className="carousel-control-prev"
-          href="#carouselExampleControls"
-          role="button"
-          data-slide="prev"
-        >
-          <span
-            className="carousel-control-prev-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="sr-only">Previous</span>
-        </a>
-        <a
-          className="carousel-control-next"
-          href="#carouselExampleControls"
-          role="button"
-          data-slide="next"
-        >
-          <span
-            className="carousel-control-next-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="sr-only">Next</span>
-        </a>
+        <div className="col">
+          <div className={C.containerImage}>
+            <img className={C.carouselImage} src={fotodos} alt="Segunda imagen" />
+            <div className={C.imageCaption}>
+              <h3 style={{ paddingTop: '10px', }}>Únete a FEDEH y juntos hagamos la diferencia</h3>
+              <div className="d-flex justify-content-center">
+                <button className={C.btn}>Sumate a FEDEH</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col">
+          <div className={C.containerImage}>
+            <img className={C.carouselImage} src={fototres} alt="Tercera imagen" />
+            <div className={C.imageCaption}>
+              <h3 style={{ paddingTop: '10px', }}>Descubre la inspiradora historia de FEDEH</h3>
+              <div className="d-flex justify-content-center pb-3">
+                <button className={C.btn}>Ver Nuestra historia</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

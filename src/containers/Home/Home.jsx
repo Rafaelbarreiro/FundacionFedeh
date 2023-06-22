@@ -14,84 +14,83 @@ import Event from "../../components/Event/Event";
 
 
 export default function Home() {
-  
+
   const dispatch = useDispatch();
   const [renderizar, setRenderizar] = useState([]);
   const events = useSelector(state => state.events)
 
   useEffect(() => {
     dispatch(getEvents())
-}, [dispatch])
-const lastEvents = events.slice(0,3)
+  }, [dispatch])
+  const lastEvents = events.slice(0, 3)
 
-useEffect(() => {
-  setRenderizar(
-    lastEvents?.reverse().map(el => (
-      <Event
-      key={el.id}
-      img={el.img}
-      title={el.title}
-      subtitle={el.subtitle}
-      id={el.id}
-      detail={el.detail}
-      date={el.date}
-      />
-  ))
-)
-},[events]);
-  
-   
+  useEffect(() => {
+    setRenderizar(
+      lastEvents?.reverse().map(el => (
+        <Event
+          key={el.id}
+          img={el.img}
+          title={el.title}
+          subtitle={el.subtitle}
+          id={el.id}
+          detail={el.detail}
+          date={el.date}
+        />
+      ))
+    )
+  }, [events]);
+
   return (
-        <div className={H.gridContainer}>
-           
-            <Carousel className={H.carousel} />
-            
-           {/*  <div className={H.main}>
+    <div className={H.gridContainer}>
+
+      <Carousel className={H.carousel} />
+
+      {/*  <div className={H.main}>
 
               <Articles />
             </div> */}
-          <div className={H.containerMission} >
-            <div className={H.mission} >
-              <div className={H.submission} >
-                <span className={H.title} >Misión</span>
-                <p className={H.description} >Que Tucumán cuente con un Centro Especializado y de excelencia, en el diagnóstico y tratamiento de las enfermedades hematooncologicas</p>
-              </div>
-              <div className={H.submission}>
-                <span className={H.title}>Visión</span>
-                <p className={H.description} >Asistir y contener a los pacientes y familiares para limitar el traslado hacia  Centros de Capital Federal y evitar la angustia del desarraigo</p>
-              </div>
-              <div className={H.submission}>
-                <span className={H.title}>Valores</span>
-                <p className={H.description} >Desarrollar la solidaridad y profundizar en la permanente búsqueda de la verdad, el desarrollo de la ciencia y la excelencia profesional, en estudios y tratamientos hematoontologicos</p>
-              </div>
-            </div>
+      <div className={H.containerMission} >
+        <div className={H.mission} >
+          <div className={H.submission} >
+            <span className={H.title} >Misión</span>
+            <p className={H.description} >Que Tucumán cuente con un Centro Especializado y de excelencia, en el diagnóstico y tratamiento de las enfermedades hematooncologicas</p>
           </div>
-          <div className={H.containerEvents} >
-            <h2>Nuestros Eventos</h2>
-            <div className={H.grid} >
-              {renderizar}
-            </div>
-           
-            <div>
-            <p>Enterate de todos los eventos para unir toda la comunidad de FEDEH</p>
-            <Link to={`/events`} >
-              <button>
-                Ingresar a todos los eventos
-              </button>
-            </Link>
-            </div>
+          <div className={H.submission}>
+            <span className={H.title}>Visión</span>
+            <p className={H.description} >Asistir y contener a los pacientes y familiares para limitar el traslado hacia  Centros de Capital Federal y evitar la angustia del desarraigo</p>
           </div>
-          <div>
-            <span>Ultimas novedades</span>
-            <AllComunications />
+          <div className={H.submission}>
+            <span className={H.title}>Valores</span>
+            <p className={H.description} >Desarrollar la solidaridad y profundizar en la permanente búsqueda de la verdad, el desarrollo de la ciencia y la excelencia profesional, en estudios y tratamientos hematoontologicos</p>
           </div>
-          <div>
-            <Newsletter/>
-          </div>
-          <div>
-            <Join />
-          </div>
-        
         </div>
+      </div>
+      <div className={H.containerEvents} >
+        <h2>Nuestros Eventos</h2>
+        <div className={H.grid} >
+          {renderizar}
+        </div>
+
+        <div>
+          <p>Enterate de todos los eventos para unir toda la comunidad de FEDEH</p>
+          <Link to={`/events`} >
+            <button>
+              Ingresar a todos los eventos
+            </button>
+          </Link>
+        </div>
+      </div>
+      <div>
+        <span>Ultimas novedades</span>
+        <AllComunications />
+      </div>
+      <div>
+        <Newsletter />
+      </div>
+      <div>
+        <Join />
+      </div>
+
+    </div>
   );
 }
