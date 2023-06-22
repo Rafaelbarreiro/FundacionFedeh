@@ -33,6 +33,7 @@
   }
   .carouselImage {
     padding-top: 10px;
+    filter: brightness(100%)
   }
 }
 
