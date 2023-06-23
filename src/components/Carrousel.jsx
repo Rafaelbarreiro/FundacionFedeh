@@ -19,9 +19,9 @@ function Carousel() {
             <div className={C.imageCaption}>
               <h3 style={{ paddingTop: '10px', }}>Un acto de donación, un mundo de amor</h3>
               <div className="d-flex justify-content-center">
-                {/* <Link> */}
+                <Link to="/donaciónDeSangre">
                 <button className={C.btn}>Como aportar mi ayuda</button>
-                {/* </Link> */}
+                </Link>
 
               </div>
             </div>
@@ -33,7 +33,9 @@ function Carousel() {
             <div className={C.imageCaption}>
               <h3 style={{ paddingTop: '10px', }}>Únete a FEDEH y juntos hagamos la diferencia</h3>
               <div className="d-flex justify-content-center">
+                <Link to="/sumateOdona">
                 <button className={C.btn}>Sumate a FEDEH</button>
+                </Link>
               </div>
             </div>
           </div>
@@ -44,7 +46,9 @@ function Carousel() {
             <div className={C.imageCaption}>
               <h3 style={{ paddingTop: '10px', }}>Descubre la inspiradora historia de FEDEH</h3>
               <div className="d-flex justify-content-center pb-3">
+                <Link to="/historia">
                 <button className={C.btn}>Ver Nuestra historia</button>
+                </Link>
               </div>
             </div>
           </div>

@@ -24,7 +24,7 @@ export default function Home() {
   }, [dispatch])
   const lastEvents = events.slice(0, 3)
 
-  useEffect(() => {
+  /* useEffect(() => {
     setRenderizar(
       lastEvents?.reverse().map(el => (
         <Event
@@ -38,7 +38,7 @@ export default function Home() {
         />
       ))
     )
-  }, [events]);
+  }, [events]); */
 
 useEffect(() => {
   setRenderizar(
