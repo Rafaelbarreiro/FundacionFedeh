@@ -47,7 +47,7 @@ return(
             className="btn  btn-ghost  "
           >
             Comprar entrada
-            <img src={image}></img>
+            {/* <img src={image}></img> */}
           </label>
           :<></>
         }
@@ -68,15 +68,8 @@ return(
                 Cerrar
               </a>
             </div> :   
-            <>CartItem2</> 
-           /*  <a
-                href={paymenturl}
-                htmlFor="Pagaritem"
-                className="btn bg-green-500 text-white hover:bg-green-600 "
-              >
-                tratar de poner un disable y no muestre nada 
-              Please confirm........
-              </a> */} 
+            <></> 
+          } 
 
     </div>
 )

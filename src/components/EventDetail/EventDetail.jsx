@@ -37,8 +37,8 @@ export default function EventDetail() {
                            </div> 
                        )) 
                     }
+                    <p> $ {detailarticle.amount} </p>
                 </div>
-               
             </div>
             <div className={s.detailImg} >
                 {detailarticle.imgdetail?.map(el =>(
