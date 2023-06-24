@@ -8,12 +8,9 @@ import Footer from './components/Footer/Footer'
 import ArticleDetail from './components/ArticleDetail/ArticleDetail'
 import JoinForm from './components/JoinForm/JoinForm';
 import Donate from './components/Donate/Donate';
-import DashBoard from './containers/Dashboard/DashBoard';
 import Funtioning from "./components/Functioning/Functioning"
 import Legal from './components/Legal/Legal';
 import Contact from "./components/Contact/Contact";
-import Mission from './components/OurMission/OurMission';
-import Articles from './containers/Articles/Articles';
 import JoinDonate from "./components/JoinDonate/JoinDonate"
 import History from './components/History/History';
 import BloodDonate from './components/BloodDonate/BloodDonate';
@@ -45,7 +42,6 @@ function App() {
           <Route exact path="/funcionamiento" element={<Funtioning />} />
           <Route exact path="/legales" element={<Legal />} />
           <Route exact path="/contacto" element={<Contact />} />
-          <Route exact path="/mision" element={<Mission />} />
           <Route exact path="/historia" element={<History />} />
           <Route exact path="/sumateOdona" element={<JoinDonate />} />
           <Route exact path="/donaciónDeSangre" element={<BloodDonate />} />
@@ -54,20 +50,6 @@ function App() {
           <Route exact path="/events" element={<AllEvents />} />
           {/* Rutas nuevas para mostrar los componentes*/}
           < Route path='/donaciones' element={<Donaciones />} />
-
-
-
-
-          {/* Rutas nuevas para mostrar los componentes*/}
-          <Route
-            exact
-            path="/dashboard"
-            element={
-              <ProtectedAdmin>
-                <DashBoard />
-              </ProtectedAdmin>
-            }
-          />
         </Routes>
         <Footer />
       </BrowserRouter>
