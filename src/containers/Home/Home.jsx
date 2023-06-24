@@ -6,10 +6,8 @@ import { Link } from "react-router-dom";
 import { getEvents } from "../../redux/actions";
 import Carousel from "../../components/Carrousel";
 import H from "../Home/Home.module.css";
-import Join from "../../components/Join/Join";
-import Newsletter from "../../components/Newsletter/Newsletter";
-import AllComunications from "../AllComunications/AllComunications";
 import Event from "../../components/Event/Event";
+import mujeres from '../../Images/mujeresFedeh.jpg'
 
 
 
@@ -24,6 +22,7 @@ export default function Home() {
   }, [dispatch])
   const lastEvents = events.slice(0, 3)
 
+
   useEffect(() => {
     setRenderizar(
       lastEvents?.reverse().map(el => (
@@ -32,7 +31,7 @@ export default function Home() {
           img={el.img}
           title={el.title}
           subtitle={el.subtitle}
-          id={el.id}
+          _id={el._id}
           detail={el.detail}
           date={el.date}
         />
@@ -40,48 +39,40 @@ export default function Home() {
     )
   }, [events]);
 
-useEffect(() => {
-  setRenderizar(
-    lastEvents?.reverse().map(el => (
-      <Event
-      key={el.id}
-      img={el.img}
-      title={el.title}
-      subtitle={el.subtitle}
-      _id={el._id}
-      detail={el.detail}
-      date={el.date}
-      />
-  ))
-)
-},[events]);
-  
-   
+
   return (
     <div className={H.gridContainer}>
-
-      <Carousel className={H.carousel} />
-
-      {/*  <div className={H.main}>
-
-              <Articles />
-            </div> */}
-      <div className={H.containerMission} >
-        <div className={H.mission} >
-          <div className={H.submission} >
-            <span className={H.title} >Misión</span>
-            <p className={H.description} >Que Tucumán cuente con un Centro Especializado y de excelencia, en el diagnóstico y tratamiento de las enfermedades hematooncologicas</p>
+      <Carousel />
+      <hr className={H.hrr} />
+      <div className='container-fluid w-100 d-flex flex-wrap justify-content-center pt-4'>
+        <span className={H.zoom}>
+          <div className='container mb-4' style={{ background: '#E57373', borderRadius: '10px' }}>
+            <h1 className={H.title}>Misión</h1>
+            <p className={H.description}>Nuestra misión es establecer y mantener un Centro Especializado y de excelencia en Tucumán, dedicado al diagnóstico y tratamiento de las enfermedades hematooncológicas. Nos comprometemos a ofrecer atención médica de la más alta calidad, utilizando tecnologías de vanguardia y enfoques terapéuticos avanzados.</p>
           </div>
-          <div className={H.submission}>
-            <span className={H.title}>Visión</span>
-            <p className={H.description} >Asistir y contener a los pacientes y familiares para limitar el traslado hacia  Centros de Capital Federal y evitar la angustia del desarraigo</p>
+        </span>
+        <span className={H.zoom}>
+          <div className='container mb-4' style={{ background: '#64B5F6', borderRadius: '10px' }}>
+            <h1 className={H.title}>Visión</h1>
+            <p className={H.description}>Nuestra visión es convertirnos en un referente en la atención hematooncológica en Tucumán, brindando servicios de calidad que eviten la necesidad de trasladarse a centros médicos en la Capital Federal y así reducir la angustia del desarraigo para los pacientes y sus familias.</p>
           </div>
-          <div className={H.submission}>
-            <span className={H.title}>Valores</span>
-            <p className={H.description} >Desarrollar la solidaridad y profundizar en la permanente búsqueda de la verdad, el desarrollo de la ciencia y la excelencia profesional, en estudios y tratamientos hematoontologicos</p>
+        </span>
+        <span className={H.zoom}>
+          <div className='container mb-4' style={{ background: '#81C784', borderRadius: '10px' }}>
+            <h1 className={H.title}>Valores</h1>
+            <p className={H.description}>En nuestro centro, nos regimos por un conjunto de valores fundamentales que guían nuestra labor diaria Solidaridad: Nos comprometemos a brindar apoyo y atención compasiva a nuestros pacientes y sus familias. Nos preocupamos por su bienestar físico, emocional y social, y nos esforzamos por crear un ambiente de confianza y apoyo mutuo.</p>
           </div>
+        </span>
+      </div>
+
+      <div className={H.containerMujeres}>
+        <img className={H.img} src={mujeres} alt="mujeresFedeh" />
+        <div className={H.textOverlay}>
+          <h2>Team FedeH</h2>
         </div>
       </div>
+
+      {/* EVENTOS  */}
       <div className={H.containerEvents} >
         <h2>Nuestros Eventos</h2>
         <div className={H.grid} >
@@ -97,17 +88,6 @@ useEffect(() => {
           </Link>
         </div>
       </div>
-      <div>
-        <span>Ultimas novedades</span>
-        <AllComunications />
-      </div>
-      <div>
-        <Newsletter />
-      </div>
-      <div>
-        <Join />
-      </div>
-
     </div>
   );
 }
