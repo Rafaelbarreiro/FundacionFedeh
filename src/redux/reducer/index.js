@@ -8,7 +8,8 @@ import {
   GET_EVENTS,
   GET_EVENT_ID,
   GET_COMUNICATIONS,
-  GET_COMUNICATION_ID
+  GET_COMUNICATION_ID,
+  URL_PAYMENT
 } from "../actions/actionName"
 
 const initialState = {
@@ -18,6 +19,7 @@ const initialState = {
   article: {},
   events: [],
   event: [],
+  paymenturl: "", //url for buy item
   comunications: [],
   comunication: []
   };
@@ -75,6 +77,12 @@ case GET_EVENT_ID:
         ...state,
         event: action.payload,
       };
+case URL_PAYMENT: {
+      return {
+          ...state,
+          paymenturl: action.payload
+        }
+    }
 ///////////COMUNICATIONS//////////////
 case GET_COMUNICATIONS: {
   return {

@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { useParams} from "react-router-dom";
 import s from "../ArticleDetail/ArticleDetail.module.css"
 import {getEventDetail} from "../../redux/actions/index"
+import CartItem from "../MercadoPago/cartItem";
 
 export default function EventDetail() {
     const dispatch = useDispatch()
@@ -45,6 +46,13 @@ export default function EventDetail() {
                         <img src={el} />
                     </div>
                 ))}
+            </div>
+            <div>
+                
+                <CartItem 
+                    amount={100}
+                    _id={params._id}
+                />
             </div>
         </div>
     )

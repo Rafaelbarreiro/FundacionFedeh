@@ -10,7 +10,8 @@ export const GET_ARTICLE_ID = "GET_ARTICLE_ID"
 
 //actions EVENTS
 export const GET_EVENTS = "GET_EVENTS";
-export const GET_EVENT_ID = "GET_EVENT_ID"
+export const GET_EVENT_ID = "GET_EVENT_ID";
+export const URL_PAYMENT = "URL_PAYMENT";
 
 //actions COMUNICATION
 export const GET_COMUNICATIONS = "GET_COMUNICATIONS";
