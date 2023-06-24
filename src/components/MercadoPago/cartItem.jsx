@@ -55,15 +55,15 @@ return(
               <a
                 href={paymenturl}
                 htmlFor="Pagaritem"
-                className="btn bg-green-500 text-white hover:bg-green-600 "
+                /* className="btn bg-green-500 text-white hover:bg-green-600 " */
               >
-                Proceed to Checkout
+                Ir a pagar
               </a>
 
               <a
                 href={url}
                 htmlFor="Pagaritem"
-                className="btn bg-red-500 text-white hover:bg-red-600 "
+                /* className="btn bg-red-500 text-white hover:bg-red-600 " */
               >
                 Cerrar
               </a>
