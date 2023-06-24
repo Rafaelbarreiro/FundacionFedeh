@@ -4,7 +4,7 @@
     background-color: #bc2c34;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-top: 20px;
+    margin-top: 0px;
     justify-items: center;
     color: whitesmoke;
     align-items: center;
