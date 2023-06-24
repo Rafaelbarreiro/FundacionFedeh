@@ -10,13 +10,14 @@ import {
     GET_ARTICLE_ID,
     GET_EVENTS,
     GET_EVENT_ID,
+    URL_PAYMENT,
     GET_COMUNICATIONS,
     GET_COMUNICATION_ID
 } from "../actions/actionName"
 
-//const URL = "http://localhost:3001";
-//const URL = "https://fundacionfedehback-production-6f27.up.railway.app"
-const URL = "https://fedeback-production.up.railway.app"
+const URL = "http://localhost:3001";
+
+//const URL = "https://fedeback-production.up.railway.app"
 
 
 export async function populateDB() {
@@ -75,11 +76,20 @@ export function getEvents(){
     return dispatch({ type: GET_EVENTS, payload: res.data})
   };
 };
-export function getEventDetail(id){
+export function getEventDetail(_id){
   return async dispatch => {
-    const event = await axios.get(`${URL}/events/${id}`);
+    const event = await axios.get(`${URL}/events/${_id}`);
     const payload = event.data;
     return dispatch({type: GET_EVENT_ID, payload})
+  }
+};
+export const buyEvent = (datos, _id) => {
+  
+  return async function(dispatch) {
+    const url = await axios.post(`${URL}/events/buy/${_id}`, datos)
+
+    dispatch({ type: URL_PAYMENT, payload: url.data})
+    
   }
 }
 
