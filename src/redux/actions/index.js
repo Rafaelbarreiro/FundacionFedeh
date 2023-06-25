@@ -15,7 +15,11 @@ import {
     GET_COMUNICATION_ID
 } from "../actions/actionName"
 
+<<<<<<< HEAD
 // const URL = "http://localhost:3001";
+=======
+//const URL = "http://localhost:3001";
+>>>>>>> 15d09582b8f6391f4520565cd0a5f3996572b1fd
 
 const URL = "https://fedeback-production.up.railway.app"
 
