@@ -16,7 +16,7 @@ export default function Event(props) {
                 <div className={s.subitem}>
                     <h2 className={s.title}>{props.title}</h2>
                     <h3>{props.subtitle}</h3>
-                    <span>{description[0].substr(0, 90) + "..."}</span>
+                    <span className={s.texto}>{description[0].substr(0, 90) + "..."}</span>
                     <Link to={`/event/${props._id}`} className={s.imgContainer}>
                         <button className={s.boton}>Ver Más</button>
                     </Link>

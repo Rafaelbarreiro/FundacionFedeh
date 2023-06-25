@@ -8,8 +8,7 @@
   .img {
     display: flex;
     flex-direction: column;
-    max-width: 100%;
-    max-height: 320px;
+    width: 900px; /* ajusta el ancho según tus necesidades */
     height: auto;
     box-sizing: border-box;
     border-radius: 20px;
@@ -32,8 +31,10 @@
   }
   
   .title {
-    font-size: 1.5rem;
+    font-size: 22px;
+    font-weight: 700;
     text-align: center;
+    text-decoration: underline;
   }
   
   .boton{
@@ -49,4 +50,12 @@
 
   .boton:hover {
     background-color: #b32727;
+  }
+
+
+  .texto{
+   width: 100%;
+   text-align: center;
+   display: flex;
+   justify-content: center;
   }
