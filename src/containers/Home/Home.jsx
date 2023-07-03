@@ -8,7 +8,7 @@ import Carousel from "../../components/Carrousel";
 import H from "../Home/Home.module.css";
 import Event from "../../components/Event/Event";
 import mujeres from '../../Images/mujeresFedeh.jpg'
-import eventos from '../../Images/eventosfedeh.png'
+import eventos from '../../Images/eventosdos.png'
 
 
 export default function Home() {
