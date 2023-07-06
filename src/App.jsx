@@ -20,6 +20,8 @@ import AllEvents from './containers/AllEvents/AllEvents'
 import { ProtectedAdmin } from './components/ProtectedAdmin';
 import { populateDB } from "./redux/actions";
 import Donaciones from './ComponentesDos/Donacion'
+//mercado pago
+import ItemPayments from './components/MercadoPago/itemPayments';
 
 
 
@@ -50,6 +52,15 @@ function App() {
           <Route exact path="/events" element={<AllEvents />} />
           {/* Rutas nuevas para mostrar los componentes*/}
           < Route path='/donaciones' element={<Donaciones />} />
+         {/*  mercado pago */}
+          <Route
+            exact path="/ipayments"
+            element={
+              /* <ProtectedRoute> */
+                <ItemPayments />
+              /* </ProtectedRoute> */
+            }
+          />
         </Routes>
         <Footer />
       </BrowserRouter>
