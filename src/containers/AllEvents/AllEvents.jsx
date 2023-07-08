@@ -13,8 +13,6 @@ export default function AllEvents(){
     useEffect(() => {
         dispatch(getEvents())
     }, [dispatch])
-    const lastEvents = events.slice(0,3)
-   
   
 return (
     <div className={s.grid}>
