@@ -1,17 +1,15 @@
 import React from "react"
 import s from "./Event.module.css"
 import { Link } from "react-router-dom"
-import moment from "moment"
+
 
 export default function Event(props) {
     const description = props.detail
-    const newDate = moment(props.date).utc().format('DD-MM-YYYY')
-    //modificar para que quede dia-mes-año
-    //console.log(props)
+    
     return (
         <div className={s.main}>
             <div className={s.container}>
-                <h2 className="container d-flex justify-content-center bg-dark rounded pb-4">{newDate}</h2>
+                <h2 className="container d-flex justify-content-center bg-dark rounded pb-4">{props.date}</h2>
                 <img src={props.img} alt="" className={s.img} />
                 <div className={s.subitem}>
                     <h2 className={s.title}>{props.title}</h2>
@@ -25,4 +23,4 @@ export default function Event(props) {
             </div>
         </div>
     )
-}
+} 

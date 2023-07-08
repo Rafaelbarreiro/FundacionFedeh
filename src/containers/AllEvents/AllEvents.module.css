@@ -1,12 +1,25 @@
 .grid{
-    margin-left: 50px;
+    padding-top: 180px;
+    /* margin-left: 30px; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+   /*  padding-right: 15px; */
+   /*  padding-left: 15px; */
     margin-right: auto;
     margin-left: auto;
+}
+.grid img{
+width: 450px;
+}
+.grid h2{
+    color: white
+}
+.grid h3{
+    color: whitesmoke;
+}
+.grid span{
+    color: whitesmoke;
 }
 
 @media screen and (max-width: 600px){

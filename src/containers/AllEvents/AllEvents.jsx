@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from "react-redux";
 import Event from "../../components/Event/Event";
 import { useEffect } from "react";
 import { getEvents } from "../../redux/actions";
-import moment from "moment"
 import s from "./AllEvents.module.css"
 
 
@@ -15,15 +14,13 @@ export default function AllEvents(){
         dispatch(getEvents())
     }, [dispatch])
     const lastEvents = events.slice(0,3)
-    console.log(events)
    
-
-
+  
 return (
     <div className={s.grid}>
         {events?.reverse().map(el =>(
             
-    <Event 
+    <Event className={s.event}
         key={el._id}
         img={el.img}
         title={el.title}
