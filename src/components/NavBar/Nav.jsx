@@ -46,6 +46,7 @@ export default function Nav() {
         <div className={N.redes}>
           <a
             href="https://www.facebook.com/megustafedeh"
+            target="_blank"
             style={{ textDecoration: "none" }}
           >
             <svg
@@ -60,7 +61,8 @@ export default function Nav() {
             </svg>
           </a>
           <br></br>
-          <a href="https://www.instagram.com/fundacionfedeh/?hl=es">
+          <a href="https://www.instagram.com/fundacionfedeh/?hl=es"
+          target="_blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="28"
