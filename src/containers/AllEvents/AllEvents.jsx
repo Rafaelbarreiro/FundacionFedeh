@@ -6,30 +6,30 @@ import { getEvents } from "../../redux/actions";
 import s from "./AllEvents.module.css"
 
 
-export default function AllEvents(){
+export default function AllEvents() {
     const events = useSelector(state => state.events)
     const dispatch = useDispatch();
 
     useEffect(() => {
         dispatch(getEvents())
     }, [dispatch])
-  
-return (
-    <div className={s.grid}>
-        {events?.reverse().map(el =>(
-            
-    <Event className={s.event}
-        key={el._id}
-        img={el.img}
-        title={el.title}
-        subtitle={el.subtitle}
-        _id={el._id}
-        detail={el.detail}
-        date= {el.date}
-        
-    />
-    
-    ) )}
-    </div>
-)
+
+    return (
+        <div className={s.grid}>
+            {events?.reverse().map(el => (
+
+                <Event
+                    key={el._id}
+                    img={el.img}
+                    title={el.title}
+                    subtitle={el.subtitle}
+                    _id={el._id}
+                    detail={el.detail}
+                    date={el.date}
+
+                />
+
+            ))}
+        </div>
+    )
 }

@@ -1,8 +1,113 @@
-.main{
-    padding-top: 20vh;
+
+
+.main {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+    text-align: center;
 }
+
+.fondo {
+ width: 100%;
+padding-top: 150px;
+}
+
+.container {
+    background-image: url("../../Images/dona.png");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.2); /* Ajusta el nivel de opacidad (0.5 en este ejemplo) */
+    background-blend-mode: multiply; 
+}
+
+
+
+.izquierda {
+    background-color: #4990b1;
+    padding: 50px;
+}
+
+.derecho {
+    background-color: #4FC3F7;
+    padding: 50px;
+}
+
 .container{
+   padding: 0px;
+   width: 100%;
+   padding: 100px;
+}
+
+.img{
+    width: 100px;
+    height: 100px;
+}
+
+
+.boton {
+    background-color: #bc2c34;
+    width: 200px;
+    border-radius: 5px;
+    color: whitesmoke;
+    
+}
+
+.pago {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+    
+}
+
+.pago input {
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+}
+
+.pago input::placeholder {
+    text-align: center;
+    color: #bc2c34  ;
+    align-items: center;
+}
+
+.inputCenter {
+    text-align: center;
+}
+
+.title {
+    font-family: 'Your Font Name', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 0px;
+    animation: fadeInUp 1s ease-in-out; 
+  }
+  
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+@media (max-width: 768px) {
+    .main {
+        grid-template-columns: 1fr;
+    }
+    .title {
+        padding-top: 140px;
+    }
+
+    .container {
+        height: auto;
+        padding: 50px;
+    }
 }

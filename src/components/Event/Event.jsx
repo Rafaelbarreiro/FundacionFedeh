@@ -5,11 +5,11 @@ import { Link } from "react-router-dom"
 
 export default function Event(props) {
     const description = props.detail
-    
+
     return (
         <div className={s.main}>
             <div className={s.container}>
-                <h2 className="container d-flex justify-content-center bg-dark rounded pb-4">{props.date}</h2>
+                <h2 className="container d-flex justify-content-center pt-3 rounded pb-4">{props.date}</h2>
                 <img src={props.img} alt="" className={s.img} />
                 <div className={s.subitem}>
                     <h2 className={s.title}>{props.title}</h2>
