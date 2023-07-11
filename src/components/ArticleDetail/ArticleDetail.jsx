@@ -10,7 +10,7 @@ export default function Detail() {
     const detailarticle = useSelector(state => state.article)
 
     useEffect(() =>{
-        dispatch(getArticleDetail(params.id))
+        dispatch(getArticleDetail(params._id))
     }, [dispatch])
    //console.log(detailarticle.imgdetail)
 /*    function prueba (detailarticle){
