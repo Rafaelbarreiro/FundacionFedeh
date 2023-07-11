@@ -21,7 +21,7 @@ export default function Articles() {
                     key={el.id}
                     img={el.img}
                     title={el.title}
-                    id={el.id}
+                    _id={el._id}
                 />
             ))}
         </div>
