@@ -61,9 +61,9 @@ export function getArticles() {
     return dispatch({ type: GET_ARTICLES, payload: res.data });
   };
 };
-export function getArticleDetail(id){
+export function getArticleDetail(_id){
   return async dispatch => {
-    const article = await axios.get(`${URL}/articles/${id}`);
+    const article = await axios.get(`${URL}/articles/${_id}`);
     const payload = article.data;
     return dispatch({type: GET_ARTICLE_ID, payload})
   }
