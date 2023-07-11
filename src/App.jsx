@@ -52,12 +52,12 @@ function App() {
           <Route exact path="/events" element={<AllEvents />} />
           {/* Rutas nuevas para mostrar los componentes*/}
           < Route path='/donaciones' element={<Donaciones />} />
-         {/*  mercado pago */}
+          {/*  mercado pago */}
           <Route
             exact path="/ipayments"
             element={
               /* <ProtectedRoute> */
-                <ItemPayments />
+              <ItemPayments />
               /* </ProtectedRoute> */
             }
           />

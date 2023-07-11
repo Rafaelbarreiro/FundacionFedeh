@@ -1,3 +1,35 @@
-.main{
-    padding-top: 20vh;
+.main {
+    width:100%;
+    background-image: url("../../Images/fondo-de-pantalla-negro.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
+    height: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.main span {
+    font-size: 55px;
+    color: whitesmoke;
+   
+}
+
+.main span:hover { 
+    text-decoration: underline;
+    color: rgb(155, 155, 155);
+}
+
+
+@media (max-width: 768px) {
+
+    .main {
+        width: 100%;
+        padding-top: 130px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .main span {
+        font-size: 30px;
+    }
 }
