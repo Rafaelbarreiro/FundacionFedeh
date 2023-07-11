@@ -9,12 +9,12 @@ export default function Article(props) {
         <div className={s.main}>
             <div className='container-fluid'>
                 <div className="container">
-                    <Link to={`/detail/${props.id}`} className={s.link}>
+                    <Link to={`/detail/${props._id}`} className={s.link}>
                         <h2 className={s.link}>{props.title}</h2>
                     </Link>
                 </div>
                 <div className="d-flex justify-content-center">
-                    <Link to={`/detail/${props.id}`} className={s.imgContainer}>
+                    <Link to={`/detail/${props._id}`} className={s.imgContainer}>
                         <div className={s.imgcontaint} >
                             <img src={props.img} alt="" className={s.img} />
                         </div>
