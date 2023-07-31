@@ -32,18 +32,25 @@ export default function CartItem ({_id}) {
         }
         /* console.log(amount.amount) */
     }
-    function Generarlink() {
+  /*   if(_id){
+      function Generarlink() {
         dispatch(buyEvent(datos, _id));
         //dispatch(postDonation(dbDonation))
-       
     }
+    }else{
+      function Generarlink() {
+        //dispatch(buyEvent(datos, _id));
+        dispatch(postDonation(dbDonation))
+    }
+    } */
+    
 /* console.log(datos) */
 return(
     <div className={s.checkout} >
         {amount
           ?<label
             htmlFor="Pagaritem"
-            onClick={Generarlink}
+           // onClick={Generarlink}
             className="btn  btn-ghost  "
           >
             Comprar entrada

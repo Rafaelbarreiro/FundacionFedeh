@@ -1,3 +1,4 @@
+export const SET_ERROR = "SET_ERROR"
 //actions User
 export const POST_USER = "POST_USER";
 export const LOGOUT_USER = "LOGOUT_USER";
@@ -16,3 +17,7 @@ export const URL_PAYMENT = "URL_PAYMENT";
 //actions COMUNICATION
 export const GET_COMUNICATIONS = "GET_COMUNICATIONS";
 export const GET_COMUNICATION_ID = "GET_COMUNICATION_ID"
+
+//actions donate
+export const ADD_DONNATE = "ADD_DONNATE"
+export const POST_DONATION = "POST_DONATION"

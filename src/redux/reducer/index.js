@@ -1,4 +1,5 @@
 import {
+  SET_ERROR,
   POST_USER,
   LOGOUT_USER,
   GET_USER,
@@ -9,23 +10,36 @@ import {
   GET_EVENT_ID,
   GET_COMUNICATIONS,
   GET_COMUNICATION_ID,
-  URL_PAYMENT
+  URL_PAYMENT,
+  ADD_DONNATE,
+  POST_DONATION
 } from "../actions/actionName"
 
 const initialState = {
+  error:[],
   user: {},
   users: [],
   articles: [],
   article: {},
   events: [],
   event: [],
+  donation:[],
   paymenturl: "", //url for buy item
   comunications: [],
   comunication: []
   };
 
+initialState.donation = localStorage.getItem("donation")
+  ? JSON.parse(localStorage.getItem("donation"))
+  : (initialState.donation = []);
+
 function rootReducer(state = initialState, action) {
     switch (action.type) {
+      case SET_ERROR:
+             return {
+            ...state,
+            error: action.payload,
+        };
  ////// USERS /////
  case POST_USER: {
   return {
@@ -77,12 +91,7 @@ case GET_EVENT_ID:
         ...state,
         event: action.payload,
       };
-case URL_PAYMENT: {
-      return {
-          ...state,
-          paymenturl: action.payload
-        }
-    }
+
 ///////////COMUNICATIONS//////////////
 case GET_COMUNICATIONS: {
   return {
@@ -95,7 +104,25 @@ case GET_COMUNICATION_ID:
         ...state,
         comunication: action.payload,
       };
-  
+/////////////////////donation/////
+case URL_PAYMENT: {
+  return {
+      ...state,
+      paymenturl: action.payload
+    }
+}
+case ADD_DONNATE:{
+  return{
+    ...state,
+    donation: action.payload
+  }
+}
+case POST_DONATION: {
+  return {
+  ...state,
+  donationDB: action.payload,
+  };
+}
         
     
  default:

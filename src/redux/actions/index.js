@@ -1,7 +1,7 @@
 import axios from "axios";
 
 import {
-
+    SET_ERROR,
     POST_USER,
     LOGOUT_USER,
     GET_USER,
@@ -12,12 +12,13 @@ import {
     GET_EVENT_ID,
     URL_PAYMENT,
     GET_COMUNICATIONS,
-    GET_COMUNICATION_ID
+    GET_COMUNICATION_ID,
+    POST_DONATION
 } from "../actions/actionName"
 
-// const URL = "http://localhost:3001";
+ const URL = "http://localhost:3001";
 
-const URL = "https://fedeback-production.up.railway.app"
+//const URL = "https://fedeback-production.up.railway.app"
 
 
 export async function populateDB() {
@@ -87,12 +88,9 @@ export const buyEvent = (datos, _id) => {
   
   return async function(dispatch) {
     const url = await axios.post(`${URL}/events/buy/${_id}`, datos)
-
     dispatch({ type: URL_PAYMENT, payload: url.data})
-    
   }
 }
-
 /////////////////COMUNICATION///////////////
 export function getComunications(){
   return async dispatch => {
@@ -107,3 +105,12 @@ export function getComunicationsDetail(id){
     return dispatch({type: GET_COMUNICATION_ID, payload})
   }
 }
+/////////////////donation////////////
+export const postDonation = payload => async dispatch => {
+  try {
+    const url = await axios.post(`${URL}/donations/donate`, payload);
+    dispatch({ type: URL_PAYMENT, payload: url.data });
+  } catch (e) {
+    return dispatch({ type: SET_ERROR, payload: e });
+  }
+};
