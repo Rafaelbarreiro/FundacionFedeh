@@ -53,7 +53,7 @@ export default function About(){
             </div>
                 
             </div>
-            <div className={s.contain2} >
+            {/* <div className={s.contain2} >
                 <span className={s.title2} >Trabajando con Ilusiones se Construyen Realidades</span><br/>
                 <span>En lo Cultural, cubrimos áreas importantes que convistieron a la solidaridad en actos de servicio y nuestro Logo presidió escenarios de espectáculos artísticos, en los que pasaron solidarios intérpretes provinciales y nacionales.</span>
                 <div className={s.pictures} >
@@ -75,7 +75,7 @@ export default function About(){
                     </div>
                 </div>
 
-            </div>
+            </div> */}
 
         </div>
     )

@@ -17,6 +17,10 @@
   /* transition: filter 0.3s ease-in-out; */
   border-radius: 10px;
 }
+.row {
+  display: flex;
+  flex-direction: row;
+}
 
 .carouselImage:hover {
   filter: brightness(100%);
@@ -44,44 +48,12 @@
   }
 }
 
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 15px;
-  font-weight: bold;
-  text-decoration: none;
-  color: white;
-  background-color: #bc2c34;
-  border-radius: 10px;
-  transition: background-color 0.3s ease;
-   color: whitesmoke;
-   width: 300px;
-}
-
-.btn:hover {
-  background-color: darkred;
-}
-
-@media (max-width: 768px) {
-
-  .btn {
-    width: 300px;
-  }
-}
 
 .bienvenidos{
   width: 100%;
   height: 400px;
 }
 
-@media (max-width: 768px) {
-  .bienvenidos {
-    display: none;
-  }
-  .imgInicio {
-    display: none;
-  }
-}
 .imgInicio{
   height: auto;
   padding-top:0px;

@@ -21,7 +21,7 @@ function Carousel() {
               <h3 style={{ paddingTop: '10px', }}>Enterate de las últimas campañas de donación</h3>
               <div className="d-flex justify-content-center">
                 <Link to="/donaciónDeSangre">
-                <button className={C.btn}>Como aportar mi ayuda</button>
+                <button className={C.btn}>Conoce un poco más</button>
                 </Link>
 
               </div>
