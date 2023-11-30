@@ -9,8 +9,8 @@ import ramonazo from '../Images/ramonazo2023.jpg'
 
 function CarouselCampaign() {
   return (
-    <div className={C.carouselWrapper}>
-      <div className="row">
+    <div className={D.carouselWrapper}>
+      <div className={D.row}>
         <div className="col">
           <div className={C.containerImage}>
             <img className={D.carouselImage} src={estrellas} alt="Primera imagen" />

@@ -24,7 +24,7 @@
 
 @media (max-width: 768px) {
   .carouselWrapper {
-    padding-top: 130px;
+   
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,6 +34,13 @@
   .carouselImage {
     padding-top: 10px;
     filter: brightness(100%)
+  }
+  .row {
+    flex-direction: column;
+    padding-top: 0;
+  }
+  .carouselImage {
+    width: 100%;
   }
 }
 

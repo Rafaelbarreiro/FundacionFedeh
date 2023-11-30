@@ -76,7 +76,7 @@ export default function Home() {
 
        <h1 >Campañas FEDEH</h1>
       </div>
-    <h2>Esto es parte del trabajo que hacemos cada día para poder ayudar cada día a quien más lo necesita</h2>
+    <h2>Esto es parte del trabajo que hacemos cada día para poder ayudar a quien más lo necesita</h2>
     <CarouselCampaign />
 
       <div>
