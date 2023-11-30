@@ -13,10 +13,14 @@ export default function AllEvents() {
     useEffect(() => {
         dispatch(getEvents())
     }, [dispatch])
+    var events2 = []
+    events?  events2 = events.reverse() : events2 = events
+    console.log(events2, "events2")
+    console.log(events, "events")
 
     return (
         <div className={s.grid}>
-            {events?.reverse().map(el => (
+            {events2?.reverse().map(el => (
 
                 <Event
                     key={el._id}

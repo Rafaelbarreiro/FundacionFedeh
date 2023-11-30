@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { getEvents } from "../../redux/actions";
 import Carousel from "../../components/Carrousel";
+import CarouselCampaign from "../../components/CarrouselCampaign";
 import H from "../Home/Home.module.css";
 import Event from "../../components/Event/Event";
 import mujeres from '../../Images/mujeresFedeh.jpg'
@@ -67,10 +68,20 @@ export default function Home() {
       <div className={H.containerMujeres}>
         <img className={H.img} src={mujeres} alt="mujeresFedeh" />
         <div className={H.textOverlay}>
-          <h2>Team FedeH</h2>
+          <h2>Equipo FedeH</h2>
         </div>
       </div>
+      <hr className={H.hrr} />
+      <div className={H.title2}>
 
+       <h1 >Campañas FEDEH</h1>
+      </div>
+    <h2>Esto es parte del trabajo que hacemos cada día para poder ayudar cada día a quien más lo necesita</h2>
+    <CarouselCampaign />
+
+      <div>
+
+      </div>
       {/* EVENTOS  */}
       <div className={H.containerEvents}>
         <div className={H.eventos}>

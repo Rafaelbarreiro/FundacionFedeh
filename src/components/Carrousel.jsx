@@ -18,6 +18,7 @@ function Carousel() {
             <img className={C.carouselImage} src={donar} alt="Primera imagen" />
             <div className={C.imageCaption}>
               <h3 style={{ paddingTop: '10px', }}>Un acto de donación, un mundo de amor</h3>
+              <h3 style={{ paddingTop: '10px', }}>Enterate de las últimas campañas de donación</h3>
               <div className="d-flex justify-content-center">
                 <Link to="/donaciónDeSangre">
                 <button className={C.btn}>Como aportar mi ayuda</button>
@@ -31,7 +32,8 @@ function Carousel() {
           <div className={C.containerImage}>
             <img className={C.carouselImage} src={fotodos} alt="Segunda imagen" />
             <div className={C.imageCaption}>
-              <h3 style={{ paddingTop: '10px', }}>Únete a FEDEH y juntos hagamos la diferencia</h3>
+              <h3 style={{ paddingTop: '10px', }}>Únete a FEDEH y se parte de nuestro equipo</h3>
+              <h3 style={{ paddingTop: '10px', }}>Entra y colabora con nuestra lucha</h3>
               <div className="d-flex justify-content-center">
                 <Link to="/sumateOdona">
                 <button className={C.btn}>Sumate a FEDEH</button>
@@ -45,6 +47,7 @@ function Carousel() {
             <img className={C.carouselImage} src={fototres} alt="Tercera imagen" />
             <div className={C.imageCaption}>
               <h3 style={{ paddingTop: '10px', }}>Descubre la inspiradora historia de FEDEH</h3>
+              <h3 style={{ paddingTop: '10px', }}>Un viaje desde nuestros inicios hasta hoy</h3>
               <div className="d-flex justify-content-center pb-3">
                 <Link to="/historia">
                 <button className={C.btn}>Ver Nuestra historia</button>

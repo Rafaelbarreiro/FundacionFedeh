@@ -16,9 +16,11 @@ import {
     POST_DONATION
 } from "../actions/actionName"
 
- const URL = "http://localhost:3001";
+ //const URL = "http://localhost:3001";
 
 //const URL = "https://fedeback-production.up.railway.app"
+
+const URL = "https://fede-back.vercel.app"
 
 
 export async function populateDB() {

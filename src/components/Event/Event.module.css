@@ -8,10 +8,11 @@
   .img {
     display: flex;
     flex-direction: column;
-    width: 900px; /* ajusta el ancho según tus necesidades */
+    width: 500px; /* ajusta el ancho según tus necesidades */
     height: auto;
     box-sizing: border-box;
     border-radius: 20px;
+    margin: auto;
   }
   
   .subitem {

@@ -22,7 +22,7 @@ import { populateDB } from "./redux/actions";
 import Donaciones from './ComponentesDos/Donacion'
 //mercado pago
 import ItemPayments from './components/MercadoPago/itemPayments';
-
+import EmailSend from './ComponentesDos/EmailSend'
 
 
 function App() {
@@ -47,6 +47,7 @@ function App() {
           <Route exact path="/historia" element={<History />} />
           <Route exact path="/sumateOdona" element={<JoinDonate />} />
           <Route exact path="/donaciónDeSangre" element={<BloodDonate />} />
+          <Route exact path="/emailenviado" element={<EmailSend />} />
           {/* hacer y cambiar el articledetail por eventdetail */}
           <Route exact path="/event/:_id" element={<EventDetail />} />
           <Route exact path="/events" element={<AllEvents />} />

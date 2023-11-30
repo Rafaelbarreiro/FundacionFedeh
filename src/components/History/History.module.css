@@ -1,6 +1,7 @@
 .main {
     width:100%;
-    background-image: url("../../Images/fondo-de-pantalla-negro.jpg");
+    background-color: #333;
+    /* background-image: url("../../Images/fondo-de-pantalla-negro.jpg"); */
     background-size: cover;
     background-position: center;
     padding-top: 100px;

@@ -3,7 +3,7 @@
 .main {
     height: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 0px;
     text-align: center;
 }
@@ -25,6 +25,11 @@ padding-top: 150px;
 
 .izquierda {
     background-color: #4990b1;
+    padding: 50px;
+}
+
+.centro{
+    background-color: #457084 ;
     padding: 50px;
 }
 
@@ -59,6 +64,15 @@ padding-top: 150px;
   align-items: center;
   justify-content: center;
     
+}
+.inputForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+.input {
+    width: 250px;
+    height: 40px;
 }
 
 .pago input {

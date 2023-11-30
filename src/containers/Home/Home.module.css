@@ -41,10 +41,19 @@
     font-size: 15px;
 }
 
-.title {
+.title2 {
 
     color: whitesmoke;
     font-size: 32px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.title2 h1 {
+  background-color: #8c2121;
+}
+.title {
+
+  color: whitesmoke;
+  font-size: 32px;
 }
 
 .zoom {
