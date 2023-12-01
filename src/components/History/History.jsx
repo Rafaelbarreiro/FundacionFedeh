@@ -6,7 +6,7 @@ export default function History() {
 
     return (
         <div className={s.main} >
-            <span>Historia Fedeh</span>
+            <h2 className={s.title} >Acompañanos a descubrir el camino recorrido </h2>
             <Articles />
         </div>
 

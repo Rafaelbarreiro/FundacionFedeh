@@ -1,6 +1,6 @@
 .main {
     width:100%;
-    background-color: #333;
+    background: linear-gradient(to bottom, rgb(121, 112, 112), rgb(49, 38, 38));
     /* background-image: url("../../Images/fondo-de-pantalla-negro.jpg"); */
     background-size: cover;
     background-position: center;
@@ -8,6 +8,10 @@
     height: auto;
     align-items: center;
     text-align: center;
+}
+.title {
+    font-size: 45px;
+    font-weight: bold
 }
 
 .main span {
