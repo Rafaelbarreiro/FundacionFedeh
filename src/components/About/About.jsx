@@ -20,7 +20,7 @@ export default function About(){
                 <h4>Fundación para el Estudio y tratamiento de las Enfermedades Hemato-oncológicas</h4>
             </div>
             <div className={s.contain} >
-            <div>
+            <div  >
                 <img src={founder} alt="Img not found" className={s.img} />
                 <div className={s.about} >
                 <span className={s.textAbout} >
@@ -36,6 +36,8 @@ export default function About(){
             </div>
             <div>
                 <img src={federico} alt="Img not found" className={s.imgF} />
+                <div className={s.about}>
+
                 
                 <span>
                 Nuestras metas y gran parte del camino a transitar ya habían sido trazado por <strong>Federico Eduardo Cruz Prats</strong>, que antes de fallecer a causa de una leucemia mieloblástica aguda; nos dejó un mandato, trabajar para que Tucumán cuente con un <strong>CENTRO DE EXCELENCIA PARA EL DIAGNÓSTICO Y EL TRATAMIENTO DE ENFERMEDADES HEMATO-ONCOLÓGICAS</strong>.
@@ -50,6 +52,7 @@ export default function About(){
                 <span>
                 * Donar sangre no genera daños al organismo ni contagia enfermedades.
                 </span>
+                </div>
             </div>
                 
             </div>
